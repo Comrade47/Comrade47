@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+ul,ol{
+    list-style: none;
+    float: left;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+.container{
+    width: 1200px;
+    margin: 0px auto;
+}
+img{
+    vertical-align: middle;
+    max-width: 100%;
+}
+.clr{
+    clear: both;
+}
+
+/* =====================================================
+Header Styling starts
+====================================================== */
+header{
+    width: 100%;
+    background-color:transparent;
+}
+.header-logo h2{
+    font-size:2.5rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-menu ul li{
+    list-style: none;
+    float: left;
+}
+.header-menu ul li a {
+    color: white;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+
+}
+.header-menu ul li a .fa-shopping-bag{
+    font-size: 3rem;
+    text-align: cenbanner
+}
+
+.all-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2.5rem 0rem;
+}
+/* =====================================================
+Header Styling ends
+====================================================== */
+/* =====================================================
+banner Styling starts
+====================================================== */
+#banner{
+    width: 100%;
+    
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4),rgba(202, 29, 29, 0.6)),
+    url(../images/banner-2.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.banner-text{
+    padding-top: 13rem;
+    padding-bottomclothingrem;
+    padding-left: 2rem;
+}
+.banner-text #sale{
+    font-size: 3.5rem;
+    color: rgb(234, 236, 98);
+    font-weight: bold;
+}
+
+.banner-text #vibe{
+    color: white;
+    font-size: 6rem;
+    font-weight: bolder;
+    padding-top: 0.3rem;
+}
+
+.banner-text #mode{
+    color: white;
+    font-size: 6rem;
+    font-weight: bolder;
+    padding-left: -0.7rem;
+}
+
+.banner-text #shop-now{
+    color: white;
+    display: inline-block;
+    padding: 1rem 3rem;
+    background-color: transparent;
+    font-size: 2rem;
+    font-weight: regular;
+    text-align: center;
+    border: 2px solid white;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    margin-top: 2rem;
+}
+.banner-text #shop-now:hover{
+    background-color: rgb(202, 29, 29);
+    border-color:rgb(202, 29, 29);
+}
+/* =====================================================
+banner Styling ends
+====================================================== */
+/* =====================================================
+clothing Styling starts
+====================================================== */
+#clothing{
+    width: 100%;
+}
+.cat-1{
+    width: 38rem;
+    background-color: violet;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    padding-right: 3rem;
+}
+.cat-1 .cat-1-left img{
+    object-fit: cover;
+    height: 100%;
+}
+.cat-1 .cat-1-right #line1{
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0.2rem 0.3rem rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+}
+.cat-1 .cat-1-right #line2{
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 0.2rem 0.3rem 0.5rem 0.7rem rgba(0, 0, 0, 0.7);
+    font-weight: regular;
+    padding-top: 1rem;
+}
+
+/* =====================================================
+clothing Styling starts
+====================================================== */
+/* =====================================================
+Header Styling starts
+====================================================== */
+/* =====================================================
+Header Styling starts
+====================================================== */
+/* =====================================================
+Header Styling starts
+====================================================== */
+/* =====================================================
+Header Styling starts
+====================================================== */

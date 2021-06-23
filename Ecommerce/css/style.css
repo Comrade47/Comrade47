@@ -1,0 +1,971 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+ul,ol{
+    list-style: none;
+    float: left;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+.container{
+    width: 1140px;
+    margin: 0px auto;
+}
+img{
+    vertical-align: middle;
+}
+.clr{
+    clear: both;
+}
+
+/* =================
+Navbar Styling Starts
+=================== */
+header{
+    width: 100%;
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .container .logo p{
+    color:#ff4545;
+    font-size: 2.7rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+header .container .logo{
+    border: 3px solid #000;
+    display: inline-block;
+    margin: 1rem 0rem;
+}
+
+header .menubar ul li{
+    list-style: none;
+    float: left;
+}
+header .menubar ul li a{
+    color: #000;
+    font-size: 2rem;
+    margin-left: 2rem;
+    display: inline-block;
+    font-weight: regular;
+    font-family: 'Open Sans', sans-serif;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+header .menubar ul li a:hover{
+    color: #ff4545;
+}
+
+header .menubar i{
+    font-size: 3rem;
+    margin-left: 2rem;
+
+}
+header .menubar i:hover{
+    color: #ff4545;
+    cursor: pointer;
+}
+
+/* =================
+Navbar Styling ends
+=================== */
+
+/* =================
+banner Styling Starts
+=================== */
+#banner{
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url(../images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#banner .banner-texts{
+    padding-top: 12.5rem;
+    padding-bottom: 12.7rem;
+}
+.banner-texts #line1{
+    font-size: 2rem;
+    color: white;
+}
+.banner-texts #line2{
+    font-size: 5rem;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 1rem;
+}
+.banner-texts #line3{
+    font-size: 1.5rem;
+    color: white;
+    padding-top: 1rem;
+}
+.banner-texts a{
+    color: white;
+    padding: 1rem 3rem;
+    display: inline-block;
+    border: 2px solid white;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    background-color: transparent;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+.banner-texts a:hover{
+    color: #ff4545;
+    border-color: #fff;
+    background-color: #fff;
+}
+/* =================
+banner Styling Starts
+=================== */
+
+/* =================
+Collection Page Styling Starts
+=================== */
+#Collection-page{
+    width: 100%;
+}
+.col-1{
+    width: 36rem;
+    position: relative;
+    margin-top: 3rem;
+}
+.col-1 img{
+    width: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.col-1-texts{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.col-1-texts #men{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    display: inline-block;
+    border-radius:1.5rem;
+    background-color: black;
+    opacity: 0.8;
+    -webkit-border-radius:1.5rem;
+    -moz-border-radius:1.5rem;
+    -ms-border-radius:1.5rem;
+    -o-border-radius:1.5rem;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+.col-1-texts #shopnow{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding-top: 1rem;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+.col-1:hover .col-1-texts{
+    background-color: black;
+    opacity: 0.6;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    
+}
+#men:hover{
+    color: #000;
+    background-color: #fff;
+    opacity: 1;
+}
+#shopnow:hover{
+    color: #ff4545;
+    opacity: 1;
+}
+.col-1:hover img{
+    transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+}
+.collections{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+/* =================
+Collection Page Styling ends
+=================== */
+
+/* =================
+Common Head Styling Starts
+=================== */
+.common-header{
+    padding-top: 10rem;
+    text-align: center;
+}
+.common-header #head{
+    font-size: 3rem;
+}
+.common-header #head-texts{
+    font-size: 1.7rem;
+    color: #000;
+    opacity: 0.6;
+    padding-top: 1.5rem;
+}
+/* =================
+Common Head Styling ends
+=================== */
+
+/* =================
+Product Page Styling Starts
+=================== */
+#products{
+    width: 100%;
+}
+.product{
+    margin-top: 4rem;
+}
+.product-img{
+    width: 29.5rem;
+    position: relative;
+}
+.product-img img{
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+.fa-shopping-cart{
+    font-size: 2.3rem;
+    padding: 1.5rem;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    cursor: pointer;
+}
+.fa-shopping-cart:hover{
+    border-radius: 0%;
+    -webkit-border-radius: 0%;
+    -moz-border-radius: 0%;
+    -ms-border-radius: 0%;
+    -o-border-radius: 0%;
+    background-color: #ff4545;
+    color: white;
+}
+.product .product-img .overly{
+    width: 0;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.product:hover .overly{
+    width: 20%;
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.product .product-img .overly ul li{
+    padding-top: 1.5rem;
+}
+.product .product-img .overly ul li a{
+    font-size: 2.3rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    text-align: center;
+    line-height: 4.5rem;
+    display: inline-block;
+    color: #000000;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+.product .product-img .overly ul li a:hover{
+    background-color: #ff4545;
+    color: #fff;
+}
+.product .text p{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 0.3rem;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    cursor: pointer;
+}
+.product .text p:hover{
+    color: #ff4545;
+}
+.product .text #price{
+    color: #ff4545;
+}
+.all-products{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/* =================
+Product Page Styling ends
+=================== */
+
+/* =================
+Promo Styling Starts
+=================== */
+#promo{
+    width: 100%;
+    padding-top: 15rem;
+   
+}
+.promo-right{
+    width: 45%;
+    position: relative;
+}
+.promo-right img{
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+.promo-left{
+    width: 45%;
+    position: relative;
+   
+}
+.promo-left:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.promo-right:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.promo-left:hover .promo-left-text{
+    background-color: #ff4545;
+    opacity: 0.6;
+    color: #fff;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.promo-right:hover .promo-right-text{
+    background-color: #ff4545;
+    opacity: 0.6;
+    color: #fff;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.promo-left-text{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 5rem;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+.promo-right-text{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 5rem;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+.promo-left img{
+    width: 100%;
+    max-width:100%;
+    object-fit: cover;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+.promo-left-text #first-line{
+    font-size: 2rem;
+    font-weight: regular;
+}
+.promo-right-text #first-line{
+    font-size: 2rem;
+    font-weight: regular;
+}
+.promo-left-text #season{
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.promo-right-text #season{
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.promo-left-text #see{
+    font-size: 2rem;
+    font-weight: regular;
+}
+.promo-right-text #see{
+    font-size: 2rem;
+    font-weight: regular;
+}
+.all-promo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* =================
+Promo Styling Starts
+=================== */
+
+/* =================
+Brand Styling Starts
+=================== */
+#brand{
+    width: 100%;
+}
+.all-brands{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 3rem;
+    cursor: pointer;
+}
+
+/* =================
+Brand Styling ends
+=================== */
+
+#footer{
+    width: 100%;
+    background-color: #222;
+    margin-top: 5rem;
+    padding: 6.5rem 11.5rem;
+}
+.footer-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.footer-row .col-1 h4{
+    color: #fff;
+    font-size: 3rem;
+}
+.footer-row .col-1 ul {
+    padding-top: 1rem;
+}
+.footer-row .col-1 ul li{
+    padding-top: 0.7rem;
+}
+.footer-row .col-1 ul li a{
+    color: white;
+    font-size: 2rem;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+.footer-row .col-1 ul li a:hover{
+    color: #ff4545;
+}
+.footer-row .col-2 p{
+    color: white;
+    font-size: 2rem;
+    padding-top: 0.5rem;
+}
+.footer-row .col-2 h4{
+    color: #fff;
+    font-size: 3rem;
+}
+.footer-row .col-2 img{
+    padding-top: 1rem;
+}
+/* ==================
+Product Page Styilng starts
+================ */
+#product-body{
+    width: 100%;
+}
+.product-body-leftside{
+    width: 30%;
+    overflow: hidden;
+   
+}
+.product-body-leftside .first-1{
+    width: 50%;
+}
+.product-body-leftside .first-1 form label{
+    font-size: 2rem;
+    opacity: 0.6;
+}
+.product-body-leftside .first-1 form input{
+    float: right;
+}
+.product-body-leftside .first-1 form{
+    padding-top: 1rem;
+}
+.product-body-leftside .first-1 h4{
+    font-size: 3rem;
+}
+
+
+
+.product-body-leftside .second-2{
+    width: 50%;
+    padding-top: 4rem;
+}
+.product-body-leftside .second-2 form label{
+    font-size: 2rem;
+    opacity: 0.6;
+    
+}
+.product-body-leftside .second-2 form input{
+    float: right;
+    
+}
+.product-body-leftside .second-2 form{
+    padding-top: 1rem;
+    
+}
+.product-body-leftside .second-2 h4{
+    font-size: 3rem;
+}
+
+
+
+.product-body-rightside form label{
+    font-size: 2rem;
+    opacity: 0.6;
+}
+.product-body-rightside form #choose{
+    width: 10rem;
+    background-color: white;
+    border-radius: 0%;
+    -webkit-border-radius: 0%;
+    -moz-border-radius: 0%;
+    -ms-border-radius: 0%;
+    -o-border-radius: 0%;
+    border: 1px solid silver;
+    color: black;
+    opacity: 0.6;
+    text-align: center;
+    padding: 1rem 0rem;
+    margin-left: 1rem;
+}
+.product-body-rightside form #choose option{
+    text-align: center;
+}
+.product-body-rightside form{
+    float: right;
+}
+.product-body-rightside{
+   width: 100%;
+   
+}
+.rightside-btn{
+    float: right;
+    margin-right
+    : 1rem;
+}
+.rightside-btn #apply-now{
+    color: white;
+    padding: 1rem 3em;
+    display: inline-block;
+    border-radius: 3rem;
+    background-color: #ff4545;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+.product-body-bothside{
+    display: flex;
+    margin-top: 5rem;
+    justify-content: space-around;
+}
+
+
+.all-items{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 6rem;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.all-items .product-1{
+    width: 25rem;
+    position: relative;
+    margin-top: 2rem;
+}
+.all-items .product-1 .product-img-1{
+    position: relative;
+}
+.all-items .product-1 .product-img-1 img{
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+.fa-shopping-cart{
+    font-size: 2.3rem;
+    padding: 1.5rem;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    cursor: pointer;
+}
+.fa-shopping-cart:hover{
+    border-radius: 0%;
+    -webkit-border-radius: 0%;
+    -moz-border-radius: 0%;
+    -ms-border-radius: 0%;
+    -o-border-radius: 0%;
+    background-color: #ff4545;
+    color: white;
+}
+.product-1 .product-img-1 .overly{
+    width: 0;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.product-1:hover .overly{
+    width: 20%;
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.product-1 .product-img-1 .overly ul li{
+    padding-top: 1.5rem;
+}
+.product-1 .product-img-1 a{
+    color: black;
+}
+.product-1 .product-img-1 .overly ul li a{
+    font-size: 2.3rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    text-align: center;
+    line-height: 4.5rem;
+    display: inline-block;
+    color: #000000;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+.product-1 .product-img-1 .overly ul li a:hover{
+    background-color: #ff4545;
+    color: #fff;
+}
+.product-1 .text p{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 0.3rem;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    cursor: pointer;
+}
+.product-1 .text p:hover{
+    color: #ff4545;
+}
+.product-1 .text #price{
+    color: #ff4545;
+}
+
+.page-btn{
+    padding-left: 1.5rem;
+    padding-top: 3rem;
+    
+}
+.page-btn ul li{
+    list-style: none;
+    float: left;
+    padding-right: 1rem;
+}
+.page-btn ul li a{
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+    padding: 1rem 1.5rem;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    
+}
+.page-btn ul li a:hover{
+    background-color: #ff4545;
+    color: white;
+}
+/* ==================
+Product Page Styilng ends
+================ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============================================================
+Porduct Details Page Starts
+============================================================ */
+#product-details{
+    width: 100%;
+}
+.details-bothside{
+    display: flex;
+    padding-top: 10rem;
+    justify-content: space-between;
+}
+.detail-leftside{
+   
+}
+.detai-leftside img{
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+.secondary-product{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+.detail-leftside .secondary-product img{
+    width: 9rem;
+    object-fit: cover;
+   
+}
+.detail-rightside h1{
+   font-size: 3rem;
+   padding-top: 2rem;
+}
+.detail-rightside h4{
+    font-size: 2rem;
+    padding-top: 3rem;
+}
+.detail-rightside #text{
+    font-size: 1.5rem;
+    line-height: 3rem;
+    padding-top: 2rem;
+}
+.detail-rightside select{
+    width: 15rem;
+    border-radius: 0%;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+    border:1px solid black;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+#para1{
+    font-size: 1.5rem;
+}
+.detail-rightside{
+    padding-left: 5rem;
+}
+.detail-rightside #add{
+    color:white;
+    padding: 1rem 3rem;
+    border-radius: 0.7rem;
+    display: inline-block;
+    background-color: #ff4545;
+    -webkit-border-radius: 0.7rem;
+    -moz-border-radius: 0.7rem;
+    -ms-border-radius: 0.7rem;
+    -o-border-radius: 0.7rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+.detail-rightside #price{
+    color: #ff4545;
+    font-size: 3rem;
+    padding-top: 2rem;
+
+}
+/* =============================================================
+Porduct Details Page Ends
+============================================================ */
+
+#related-product{
+    width: 100%;
+}
+/* =============================================================
+Porduct Details Page Starts
+============================================================ */
