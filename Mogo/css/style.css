@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+ul,ol{
+    list-style: none;
+    float: left;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+.container{
+    width: 1200px;
+    margin: 0px auto;
+}
+img{
+    vertical-align: middle;
+}
+.clr{
+    clear: both;
+}
+
+
+/* COmmon Header */
+.common-header #common-head{
+    font-size: 2.4rem;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+    color: #000;
+}
+.common-header #head-text{
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #000000;
+    padding-top: About;
+}
+.common-header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.common-header:after{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    content: '';
+    bottom: -3.8rem;
+    background: #f38181;
+    width: 6rem;
+    height: 0.3rem;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+/* ========================================================================
+                            HEader Styling Starts
+==========================================================================*/
+#fullpage{
+    width: 100%;
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    position: relative;
+    z-index: 1;
+}
+#fullpage:after{
+    position: absolute;
+    left: 0px;
+    content: '';
+    top: 0px;
+    background: linear-gradient(to top,rgb(252, 227, 138) 0%, #f38181 100%);
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+header{
+    display: flex;
+    padding-top: 3rem;
+    justify-content: space-between;
+}
+
+.header-menu ul li{
+    list-style: none;
+    float: left;
+
+}
+.header-menu ul li a{
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    margin-left: 6rem;
+    position: relative;
+    display: inline;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+.header-menu ul li a:hover{
+    color: #fce38a;
+}
+.header-menu ul li a:hover:after{
+    width: 100%;
+    
+   
+}
+.header-menu ul li a:after{
+    position: absolute;
+    content: '';
+    left: 0px;
+    bottom: -1rem;
+    width: 0;
+    height: 0.3rem;
+    background-color: #fce38a;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+   
+}
+.banner-texts{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 16rem;
+    padding-bottom: 22.6rem;
+}
+.banner-texts h2{
+    font-size: 7.2rem;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+    color: #ffffff;
+    
+}
+
+.banner-texts h1{
+    font-size: 15rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    
+    
+}
+.banner-texts #mogo{
+    margin-top: -4rem;
+    position: relative;
+}
+.banner-texts #mogo:before{
+    position: absolute;
+    content: '';
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -5rem;
+    width: 7rem;
+    height: 0.3rem;
+    background-color: #fff;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+
+.banner-texts #learn-more{
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    border: 0.2rem solid #fff;
+    background: transparent;
+    display: inline-block;
+    padding: 1.2rem 2rem;
+    margin-top: 9rem;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    text-transform: uppercase;
+}
+.banner-texts #learn-more:hover{
+    background: linear-gradient(to top,rgb(252, 227, 138) 0%, #f38181 100%);
+    border-color:  #f38181;
+}
+/* ========================================================================
+                            HEader Styling ends
+==========================================================================*/
+/* ========================================================================
+                            About Styling Starts
+==========================================================================*/
+#about-us{
+    width: 100%;
+    padding-top: 9.5rem;
+    padding-bottom: 11.1rem;
+}
+
+.about-us-text{
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: #999999;
+    text-align: center;
+    padding-top: 8rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+.about-contents{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 9rem;
+}
+.about-item .story{
+    position: relative;
+    z-index: 1;
+}
+.about-item .story:hover .overly{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+.about-item .story .overly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,rgb(252, 227, 138) 0%, #f38181 100%);
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+.about-item .story .overly i{
+    font-size: 4rem;
+    color: #fff;
+}
+.about-item .story .overly p{
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+/* ========================================================================
+                            About Styling Starts
+==========================================================================*/
+/* ========================================================================
+                            HEader Styling Starts
+==========================================================================*/
+/* ========================================================================
+                            Review Page Styling Starts
+==========================================================================*/
+#review-page{
+    width: 100%;
+    background: #95e1d3;
+    padding: 8rem 0rem;
+    box-sizing: border-box;
+}
+.all-review{
+    display: flex;
+    justify-content: center;
+    
+}
+.review:nth-child(1){
+    padding-left: 0px;
+}
+.review{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 10rem;
+}
+.review #review-number{
+    font-size: 7.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+.review #work{
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+/* ========================================================================
+                            Review Page Styling Starts
+==========================================================================*/
+/* ========================================================================
+                            Service Styling Starts
+==========================================================================*/
+#services{
+    width: 100%;
+    padding: 10rem 0rem;
+}
+.all-services{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 10rem;
+}
+.service{
+    display: flex;
+    width: 30%;
+    margin-left: 2rem;
+}
+.service .service-left i{
+    font-size: 4rem;
+    color: #bbece3;
+    padding-right: 2.5rem;
+}
+.service .service-right #head{
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000;
+}
+.service .service-right #text{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #999999;
+    padding-top:1rem;
+    line-height: 2.4rem;
+}
+/* ========================================================================
+                            Service Styling ends
+==========================================================================*/
+/* ========================================================================
+                            Comment Page Styling Starts
+==========================================================================*/
+#comment-page{
+    width: 100%;
+    background: #f8f8f8;
+    padding: 8rem 0rem;
+}
+.comment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 10rem;
+}
+.comment-left i{
+    font-size: 10rem;
+    color: #bbece3;
+   
+} 
+.comment-right{
+    margin-left: 6rem;
+}
+.comment-right #comment-text{
+    font-size: 2.4rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #999999;
+    position: relative;
+}
+.comment-right #comment-text:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -3.5rem;
+    width: 7rem;
+    height: 0.3rem;
+    background: #f38181;
+}
+.comment-right #comment-owner{
+    font-size: 2.4rem;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+    color: #000000;
+    padding-left: 7.2rem;
+    margin-top: 1.7rem;
+}
+
+/* ========================================================================
+                            Comment Page Styling ends
+==========================================================================*/
+
+
+/* ========================================================================
+                            Team Page Styling Starts
+==========================================================================*/
+#team-page{
+    width: 100%;
+    padding-top: 10rem;
+}
+.team{
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+}
+.member:nth-child(1) {
+    margin-left: 0px;
+}
+.member {
+    padding: 1rem;
+    margin-left: 2rem;
+}
+.member .member-img{
+    position: relative;
+    z-index: 1;
+}
+.member .member-img:hover .overly{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    width: 100%;
+    height: 100%;
+}
+.member .member-img .overly {
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 0px;
+    width: 0%;
+    height: 0%;
+    background: linear-gradient(to top,rgb(252, 227, 138) 0%, #f38181 100%);
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.member .member-img .overly ul li{
+    list-style: none;
+    float: left;
+}
+.member .member-img .overly ul li a{
+    font-size: 4rem;
+    padding: 1.5rem 2rem;
+    display: inline-block;
+    background: #fce38a;
+    color: #f38181;
+    border-right: 0.2rem solid #f9bd87;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+.member .member-img .overly ul li a:hover{
+    background: #f38181;
+    color: #fff;
+   
+}
+.member-info #name{
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #333333;
+    padding-top: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.member-info #job{
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #999999;
+    padding-top: 1rem;text-align: center;
+}
+
+/* ========================================================================
+                            Team Page Styling ends
+==========================================================================*/
+
+/* ========================================================================
+                            Our Works Styling Starts
+==========================================================================*/
+#our-work{
+    width: 100%;
+    padding: 10rem 0rem;
+}
+.all-works{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 9rem;
+}
+.work{
+    width: 25%;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.work:hover .overly{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+.work .overly{
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    transform: scale(0);
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to top,rgb(252, 227, 138) 0%, #f38181 100%);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+.work .overly i{
+    font-size: 4rem;
+    color: #fff;
+}
+.work .overly #head{
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+}
+.work .overly p{
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+     font-weight: 300;
+    font-style: italic;
+    color: #fff;
+    padding-top: 1rem;
+                
+
+}
+.work img{
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/* ========================================================================
+                            Our Works Styling Starts
+==========================================================================*/
+
+/* ========================================================================
+                            HEader Styling Starts
+==========================================================================*/
+
+/* ========================================================================
+                            HEader Styling Starts
+==========================================================================*/
