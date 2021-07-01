@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @Comrade47
 - 👀 I’m interested in coding
 - 🌱 I’m currently learning Web Designing And Development
-- 💞️ I’m looking to collaborate on 
+- 💞️ I’m looking to collaborate on Front-End_development
 - 📫 How to reach me ...
 
 <!---
