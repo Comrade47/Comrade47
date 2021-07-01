@@ -1,0 +1,863 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+    float: left;
+}
+html{
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+.container{
+    width: 994px;
+    margin: 0px auto;
+}
+img{
+    vertical-align: middle;
+}
+.clr{
+    clear: both;
+}
+/* ======================================
+    Common Header Styling
+=================================*/
+.common-head {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.common-head i{
+    padding-top: 1.5rem;
+    font-size: 2rem;
+    opacity: 0.4;
+    position: relative;
+}
+.common-head i:after{
+    position: absolute;
+    content: '';
+    left: -10rem;
+    bottom:1rem;
+    width: 9rem;
+    height: 0.2rem;
+    background-color: #cccccc;
+}
+.common-head i:before{
+    position: absolute;
+    content: '';
+    right: -10rem;
+    bottom:1rem;
+    width: 9rem;
+    height: 0.2rem;
+    background-color: #cccccc;
+    z-index: -1;
+}
+
+
+.common-head #head{
+    color: #4c76ff;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 900;
+    position: relative;
+}
+
+/* ================================================
+    banner section starts
+=========================================*/
+
+#banner{
+    width: 100%;
+    background: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+#banner:after{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 0px;
+    background-color: #000000;
+    opacity: 0.61;
+    z-index: -1;
+}
+.banner-texts{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 22.5rem 0rem 24.5rem;
+}
+.banner-texts h1{
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 6.2rem;
+    font-weight: 900;
+}
+.banner-texts #banner-content{
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 4.8rem;
+    font-weight: 100;
+    padding-top: 1rem;
+    position: relative;
+}
+.banner-texts #banner-content:after{
+    position: absolute;
+    content: '';
+    bottom: -3.2rem;
+    left:11rem;
+    width: 3.4rem;
+    height: 0.2rem;
+    background-color: #4c76ff;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+.banner-texts #banner-content:before{
+    position: absolute;
+    content: '';
+    bottom: -3.2rem;
+    right:9rem;
+    width: 3.4rem;
+    height: 0.2rem;
+    background-color: #4c76ff;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+.banner-texts #banner-content span{
+    color: #4c76ff;
+}
+
+.banner-texts #banner-end{
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 100;
+    padding-top: 1.8rem;
+}
+.banner-texts .banner-links{
+    display: flex;
+    margin-top:10rem ;
+}
+.banner-texts .banner-links a {
+    margin-left: 1.7rem;
+}
+.banner-texts .banner-links a i:hover{
+    opacity: 1;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+.banner-texts .banner-links a i{
+    font-size: 3rem;
+    color: #ffffff;
+    opacity: 0.2;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+/* =========================================
+Header starts
+========================================= */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.3rem 0rem;
+}
+header .header-logo #logo{
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+header nav ul li{
+    list-style: none;
+    float: left;
+}
+header nav ul li a{
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-left: 3rem;
+    
+    position: relative;
+    display: inline-block;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+header nav ul li a:hover::after{
+    width: 100%;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+header nav ul li a:after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0.2rem;
+    background-color: #4c76ff;
+    top: -2rem;
+    left: 0px;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+
+
+/* ======================================================
+    Features Page styling Starts
+==========================================================*/
+#features{
+    width: 100%;
+    padding: 8rem 0rem 11.5rem;
+    background-color: #efefef;
+}
+.all-features{
+    display: flex;
+    margin-top: 7rem;
+}
+.feature{
+    margin-left: 2rem;
+    display: flex;
+}
+.feature .logo i{
+    font-size: 2rem;
+    color: #4c76ff;
+    padding: 1rem;
+    border: 0.1rem solid #4c76ff;
+    border-radius: 50%;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.feature .content{
+    padding-left: 1.4rem;
+}
+.feature .content #feature-head{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #062033;
+}
+.fa-bullhorn{
+    transform: rotate(325deg);
+    -webkit-transform: rotate(325deg);
+    -moz-transform: rotate(325deg);
+    -ms-transform: rotate(325deg);
+    -o-transform: rotate(325deg);
+}
+.feature .content #feature-text{
+    line-height: 1.6rem;
+    color:#062033;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.09rem;
+    padding-top: 2rem;
+    
+}
+
+
+/* =====================================
+    Mobile Page Styling
+===============================*/
+
+#mobile{
+    width: 100%;
+    padding: 7.5rem 0rem 12.2rem;
+}
+.mobile-page-both-sides{
+    display: flex;
+    margin-top: 7rem;
+}
+.mobile-page-head p{
+    color: #282528;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    text-align: center;
+    padding: 0px 3rem;
+}
+.mobile-page-both-sides .mobile-left .row-1:nth-child(1){
+    margin-top: 3rem;
+}
+.mobile-page-both-sides .mobile-left .row-1{
+    margin-top:8rem;
+    display: flex;
+    padding: 2rem 1.5rem;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+.mobile-page-both-sides .mobile-left .row-1:hover{
+    background-color: #fefce9;
+}
+.mobile-page-both-sides .mobile-left .row-1 .logo i{
+    font-size: 3rem;
+    color: #bab9ba;
+    
+}
+.mobile-page-both-sides .mobile-left .row-1 .content{
+    padding-left: 3.4rem;
+}
+.mobile-page-both-sides .mobile-left .row-1 .content #content-head{
+    color: #282528;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.mobile-page-both-sides .mobile-left .row-1 .content #content-text{
+    color: #282528;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2rem;
+    padding-right: 4.2rem;
+
+}
+
+/* =======================================
+    Our Work
+==============================*/
+#our-work{
+    width: 100%;
+
+}
+.work-head{
+    margin-top: 4rem;
+}
+.work-head p{
+    color: #60707d;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 1.4rem;
+    padding: 0rem 10rem ;
+    text-align: center;
+}
+.work-menu nav ul li{
+    list-style: none;
+    float: left;
+
+}
+.all-images{
+    margin-top: 7.5rem;
+}
+.work-menu{
+    display: flex;
+    justify-content: center;
+    margin-top: 6.5rem;
+}
+.work-menu nav ul li a{
+    display: inline-block;
+    color: #062033;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 1.4rem;
+    margin-left: 1rem;
+    padding: 1.3rem 2.2rem;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.work-menu nav ul li a:hover{
+    background-color: #4c76ff;
+    color: #fff;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+.work-images {
+    display: flex;
+    
+}
+.work-images .img{
+    position: relative;
+    overflow: hidden;
+    width: 25%;
+  
+}
+.work-images .img img{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+.work-images .img .overly i{
+    font-size: 2rem;
+    color: white;
+    padding: 1rem;
+    border-radius: 50%;
+    text-align: center;
+    border: 0.2rem solid white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}   
+.work-images .img .overly p{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding-top: 1rem;
+}
+.work-images .img .overly p span{
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+.work-images .img:hover .overly{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+.work-images .img .overly{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #4c76ff;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transform: scale(0);
+    transition: all ease-in-out 0.3s;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    
+}
+
+
+/* ======================================================
+team page starts
+=================================================== */
+#team{
+    width: 100%;
+    padding: 10rem 0rem;
+}
+.all-members{
+    display: flex;
+}
+.all-members .member{
+    width: 22%;
+    margin-left: 2.5rem;
+    margin-top: 10rem;
+    cursor: pointer;
+}
+.all-members .member:nth-child(1){
+    margin-left: 1rem;
+}
+.all-members .member .image{
+    position: relative;
+    overflow: hidden;
+}
+.all-members .member .overly .menu{
+    margin-top: 4rem;
+}
+.all-members .member .info{
+    padding-top: 1rem;
+    text-align: center;
+}
+.all-members .member .info #name{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #062033;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.all-members .member .info #work{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #60707d;
+    padding-top: 0.5rem;
+}
+.all-members .member .overly .menu  a {
+    color: white;
+    padding: 1rem;
+    display: inline-block;
+    background-color: #3552ae;
+    font-size: 2rem;
+}
+.all-members .member .overly p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 1.5rem;
+    color: white;
+    
+}
+.all-members .member .overly p span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: block;
+    color: white;
+    padding-bottom: 1rem;
+}
+.all-members .member:hover .info #name{
+    color: #47c6ac;
+}
+.all-members .member .image:hover .overly{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+.all-members .member .overly{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #557dff;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    transform: scale(0);
+    transition: all linear 0.3s;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.all-members .member .image img{
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+/* ===================================================
+    Fun fact page styling
+===========================================*/
+#fun-fact{
+    width: 100%;
+    padding: 7rem 0rem 11rem;
+    background-image: url(../images/city.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+#fun-fact:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #062033;
+    opacity: 0.7;
+    z-index: -1;
+}
+#fun-fact .container .common-head i{
+    color: white;
+}
+#fun-fact .container .common-head :after{
+    background-color: white;
+}
+#fun-fact .container .common-head :before{
+    background-color: white;
+}
+.all-facts{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
+.fact i{
+    font-size: 5rem;
+    padding: 3.5rem;
+    color: white;
+    background-color: transparent;
+    border-radius: 50%;
+    text-align: center;
+    border: 0.2rem solid white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.fact .fact-text{
+    padding-top: 2rem;
+    text-align: center;
+}
+.fact .fact-text #num{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4.48rem;
+    font-weight: 600;
+    color: white;
+}
+.fact .fact-text #text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* ============================================
+discuss page styling
+========================================== */
+#discuss{
+    width: 100%;
+    padding-top: 7.5rem;
+}
+
+#discuss #frame{
+    width: 100%;
+    height: 60%;
+}
+.all-works{
+    display: flex;
+    justify-content: space-between;
+    padding: 8rem 0rem;
+}
+.work-left{
+    width: 20%;
+}
+.work-left #left-top{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #062033;
+}
+
+.work-left #left-content{
+    color: #6a737b;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-top: 3.2rem;
+}
+.form{
+    margin-left:-4rem;
+}
+.form h3{
+    color: #062033;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.form{
+    width: 70%;
+}
+.form #email{
+    margin-left: 2rem;
+}
+.form input{
+    color: #5b646e;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1.8rem 0rem;
+    padding-left: 1rem;
+    border: none;
+    border-bottom: 0.2rem solid #f1f1f1;
+    width: 48%;
+    
+}
+#massege{
+    width: 100%;
+}
+.btn{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2.8rem;
+}
+.btn a{
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-left: 2rem;
+    position: relative;
+}
+.btn a i{
+    position: absolute;
+    left: 0px;
+    top: 0.3rem;
+    color: #3552ae;
+    font-size: 1.3rem;
+}
+.right-links ul li a{
+    color: #cdd2d6;
+    font-size: 2rem;
+    margin-top: 1rem;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+.right-links ul li a:hover{
+    color: black;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+/* ================================================
+    Footer Styling
+=========================================*/
+
+footer{
+    width: 100%;
+    background-color: #000000;
+    padding:5.5rem 0rem 5.5rem;
+}
+.footer-row{
+    display: flex;
+    justify-content: center;
+}
+.footer-row .col-1{
+    width: 32%;
+    padding-right: 10rem;
+}
+.footer-row .col-2{
+    width: 32%;
+    padding-right: 6rem;
+}
+.footer-row .col-3{
+    width: 32%;
+    padding-right: 6rem;
+}
+.footer-row .col-1 #head{
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.6rem;
+    font-weight: 900;
+    letter-spacing: 0.5rem;
+}
+.footer-row .col-1 #text{
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 2.2rem;
+    padding-top: 2rem;
+}
+
+.footer-row .col-2 #head{
+    color: #cacaca;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+.footer-row .col-3 #head{
+    color: #cacaca;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+.footer-row .col-3 ul{
+   padding-top: 1rem;
+}
+.footer-row .col-3 ul:last-child{
+    margin-left: 2rem;
+}
+
+.footer-row .col-3 ul li{
+    color: #cacaca;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding-top: 1.5rem;
+}
+.footer-row .col-2 .arrow {
+    padding: 1rem ;
+    border: 0.2rem solid #fff;
+    box-sizing: border-box;
+    margin-top: 3rem;
+    text-align: right;
+}
+.footer-row .col-2 .arrow i{
+    color: #676869;
+    font-size: 3rem;
+}
+.footer-row .col-2 #text{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    padding-top: 2rem;
+}
+.footer-row .col-1 #head span{
+    color: #557dff;
+}
