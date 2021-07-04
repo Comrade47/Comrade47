@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@100;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+    float: left;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+.container{
+    max-width: 1170px;
+    margin: 0px auto;
+}
+html{
+    font-size: 62.5%;
+}
+img{
+    vertical-align: middle;
+}
+.clr{
+    clear: both;
+}
+:root{
+    --hover:#28b8d8;
+    --text:#444444;
+}
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+:root{
+    --hover:#00e0d0;
+}
+.align-center{
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+
+/* ============================
+    banner Part Starts
+===========================*/
+#banner{
+    background: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header .header-logo p{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #fff;
+    padding-left: 0.5rem;
+}
+header nav ul li a{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #fff;
+    margin-left: 4.3rem;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+header nav ul{
+    padding: 0rem 2.5rem;
+    border-right: 0.1rem solid silver;
+}
+header nav ul li a:hover{
+    color: var(--hover);
+}
+header {
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+    padding: 3.3rem 0rem;
+}
+header .nav-links i{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+.banner-texts{
+    padding: 25rem 0rem;
+
+}
+.banner-texts h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    color: #fff;
+}
+.banner-texts  .first{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+    font-size: 4rem;
+    color: #fff;
+}
+.banner-texts  .last{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+    font-size: 1.4rem;
+    color: #fff;
+    padding-top: 1rem;
+}
+/* ============================
+    banner Part ends
+===========================*/
+/* ============================
+    Second page Part Starts
+===========================*/
+#second-page{
+    padding: 8rem 0rem;
+    background: #f9f9f9;
+}
+.header #head{
+    font-family: 'Roboto Slab', serif;
+    font-weight:400;
+    font-size: 3rem;
+    color: var(--text);
+}
+.header #text{
+    font-family: 'Roboto Slab', serif;
+    font-weight:400;
+    font-size: 1.4rem;
+    color: var(--text);
+    padding-top: 2.5rem;
+}
+
+.service .service-header p{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight:700;
+    font-size: 1.8rem;
+    color: var(--text);
+    text-align: center;
+    padding-top: 7rem;
+    text-transform: uppercase;
+}
+.all-card{
+    margin-top: 3rem;
+}
+.card:nth-child(1){
+    margin-left: 0;
+}
+.card{
+    width: 31%;
+    padding: 1rem;
+    border: 0.1rem solid #e3e3e3;
+    margin-left: 3rem;
+}
+.card #head{
+    font-family: 'Roboto Slab', serif;
+    font-weight:700;
+    font-size: 1.7rem;
+    color: var(--text);
+    padding-top: 2.5rem;
+}
+.card .card-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+    font-size: 1.4rem;
+    color: var(--text);
+    line-height: 2.2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+/* ============================
+    Second page Part ends
+===========================*/
+
+/* ============================
+    Photos Part Starts
+===========================*/
+#photos{
+    padding: 8rem 0rem;
+    background-color: #2c2c2c;
+}
+.common-head p{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight:700;
+    font-size: 1.8rem;
+    color: #d5d5d5;
+    position: relative;
+    text-transform: uppercase;
+}
+.common-head p::after{
+    position: absolute;
+    content: '';
+    top: 0.9rem;
+    right: 45rem;
+    width: 10rem;
+    height: 0.1rem;
+    background-color: #535353;
+}
+.common-head p:before{
+    position: absolute;
+    content: '';
+    top: 1.3rem;
+    right: 45rem;
+    width: 10rem;
+    height: 0.1rem;
+    background-color: #535353;
+}
+.common-head{
+    position: relative;    
+    
+    
+}
+.common-head:after{
+    position: absolute;
+    content: '';
+    top: 0.9rem;
+    left: 45rem;
+    width: 10rem;
+    height: 0.1rem;
+    background-color: #535353;
+}
+
+.common-head:before{
+    position: absolute;
+    content: '';
+    top: 1.3rem;
+    left: 45rem;
+    width: 10rem;
+    height: 0.1rem;
+    background-color: #535353;
+}
+.images{
+    padding-top: 2rem;
+   margin: 0 auto;
+}
+.main-img{
+    width: 22%;
+    margin-left: 1.5rem;
+}
+#last-img{
+    margin-left: 1.5rem;
+}
+.main-img img{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+.btn a{
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 1.7rem 2rem;
+    color: #9e9e9e;
+    border: 0.1rem solid #9e9e9e;
+}
+.btn{
+    margin-top: 4rem;
+}
+/* ============================
+
+    Photos Part ends
+===========================*/
+/* ============================
+    Journal Part Starts
+===========================*/
+#journal{
+    padding:8rem 0rem;
+    background-color: #f9f9f9;
+}
+.common-head-2 p{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight:700;
+    font-size: 1.8rem;
+    color: #444444;
+    text-transform: uppercase;
+}
+.journal-cards{
+    margin-top: 2rem;
+}
+.card-2 {
+    width: 30%;
+    border: 0.2rem solid #e3e3e3;
+    padding: 2.5rem 0rem;
+    margin-left: 3rem;
+}
+.card-2:nth-child(1){
+    margin-left: 0rem;
+}
+.common-head-2 p:after{
+    position: absolute;
+    content: '';
+    top: 0.9rem;
+    right: 40rem;
+    width: 10rem;
+    height: 0.1rem;
+    background-color: #535353;
+}
+.common-head-2{
+    position: relative;
+}
+.common-head-2 p{
+    position: relative;
+}
+.common-head-2:after{
+    position: absolute;
+    content: '';
+    top: 0.9rem;
+    left: 40rem;
+    width: 10rem;
+    height: 0.1rem;
+    background-color: #535353;
+}
+
+.common-head-2:before{
+    position: absolute;
+    content: '';
+    top: 1.3rem;
+    left: 40rem;
+    width: 10rem;
+    height: 0.1rem;
+    background-color: #535353;
+}
+.common-head-2 p:before{
+    position: absolute;
+    content: '';
+    top: 1.3rem;
+    right: 40rem;
+    width: 10rem;
+    height: 0.1rem;
+    background-color: #535353;
+}
+.card-2 .card-head{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight:700;
+    font-size: 1.6rem;
+    color: #444444;
+}
+
+.card-2 .date{
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 1rem;
+    color: #999999;
+}
+.card-2 img{
+    width: 100%;
+    max-width: 100%;
+    margin-top: 2.5rem;
+}
+
+.card-2 .text{
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+    font-size: 1.4rem;
+    padding: 0rem 2rem;
+    margin-top: 1rem;
+    color: #666666;
+}
+.card-2 .reading{
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+    font-size: 1.1rem;
+    margin-left: 2rem;
+    padding-right: 7rem;
+    line-height: 2.2rem;
+    margin-top: 1rem;
+    color: #999999;
+    position: relative;
+    text-transform: uppercase;
+
+}
+.card-2 .reading span{
+    position: absolute;
+    right: 2rem;
+    top: 0px;
+    
+}
+.card-2 .reading:after{
+    position: absolute;
+    content: '';
+    left: 0px;
+    bottom: 0px;
+    width: 10rem;
+    height: 0.2rem;
+    background-color: #28b8d8;
+
+}
+.left-head p{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 800;
+    position: relative;
+    color: var(--text);
+    text-transform: uppercase;
+}
+
+.left-head p:after{
+    position: absolute;
+    content: '';
+    left: 16rem;
+    width: 10rem;
+    height: 0.1rem;
+    background-color: #d9d9d9;
+    top:1rem
+}
+.about-me-section {
+    margin-top: 7.5rem;
+}
+.left-head p:before{
+    position: absolute;
+    content: '';
+    top: 1.2rem;
+    left: 16rem;
+    width: 10rem;
+    height: 0.1rem;
+    background-color: #d9d9d9;
+}
+.leftside{
+    width: 50%;
+    padding-right: 1.5rem;
+}
+.left-row{
+    margin-top: 2rem;
+}
+.left-content{
+    margin-left: 2.7rem;
+    
+}
+.left-content #line-1{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.8rem;
+    font-weight: 100;
+    color: #666666;
+    line-height: 2.8rem;
+}
+
+.left-content #line-2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #666666;
+    line-height: 2.4rem;
+    margin-top: 1.5rem;
+}
+.rightside{
+    width: 50%;
+    margin-left: 1.5rem;
+}
+.right-row {
+    margin-top: 2rem;
+}
+.right-row .col-1{
+    margin-top: 2rem;
+}
+.right-row .col-1 .img i{
+    font-size: 5rem;
+    color: #28b8d8;
+}
+.col-1-text{
+    margin-left: 2rem;
+    
+}
+.right-row .col-1 .col-1-text .head{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--text);
+}
+.right-row .col-1 .col-1-text .content{
+    color: #666666;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    margin-top: 1.5rem;
+    
+}
+
+.left-head-2 p{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 800;
+    position: relative;
+    color: var(--text);
+    text-transform: uppercase;
+}
+
+.left-head-2 p:after{
+    position: absolute;
+    content: '';
+    left: 11rem;
+    width: 10rem;
+    height: 0.1rem;
+    background-color: #d9d9d9;
+    top:1rem
+}
+
+.left-head-2 p:before{
+    position: absolute;
+    content: '';
+    left: 11rem;
+    width: 10rem;
+    height: 0.1rem;
+    background-color: #d9d9d9;
+    top:1.2rem
+}
+/* ============================
+    Journal Part ends
+===========================*/
+/* ============================
+    Footer Part Starts
+===========================*/
+footer{
+    padding: 7rem 0rem;
+    background-color: #373737;
+}
+
+.common-col-head p{
+    color:#f0f0f0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 800;
+    font-size: 1.6rem;
+}
+.footer-row .footer-col-1 {
+    width: 22%;
+}
+.footer-row .footer-col-1 .text{
+    padding: 2rem 0rem
+}
+.footer-row .footer-col-1 .text p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color:#cacaca;
+    line-height: 2.4rem;
+    padding-top: 1.8rem;
+}
+
+.footer-row .footer-col-1 .text p span{
+    display: block;
+    color: #929292;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.footer-row .footer-col-1 .address{
+    padding-top: 2rem;
+}
+.footer-row .footer-col-1 .address p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color:#cacaca;
+    line-height: 2.4rem;
+    padding-left: 1.7rem;
+    position: relative;
+}
+.footer-row .footer-col-1 .address p i{
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+}
+/* ============================
+    Footer Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/

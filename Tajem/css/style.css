@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+    float: left;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+.container{
+    max-width: 960px;
+    margin: 0px auto;
+}
+html{
+    font-size:62.5%
+}
+img{
+    vertical-align: middle;
+}
+.clr{
+    clear: both;
+}
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.justify-center{
+    justify-content: center;
+}
+:root{
+    --hover:#00e0d0;
+    --heading:#413d4b;
+    
+}
+.align-center{
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+
+/* ============================
+    banner Part Starts
+===========================*/
+#banner{
+    background: linear-gradient(rgba(9, 5, 47,0.7) 0%,rgba(49, 29, 94,0.7) 100%),
+    url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+header{
+    padding-top: 1.6rem;
+}
+header .header-menu ul li a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: #ffffff;
+    display: inline-block;
+    margin-left: 2.5rem;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+header .header-menu ul li a:hover{
+    color: var(--hover);
+}
+.banner-text{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15.4rem;
+    
+}
+.banner-text h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: #ffffff;
+    position: relative;
+}
+.banner-text h1:after{
+    position: absolute;
+    content: '';
+    left: 50%;
+    transform: translate(-50%);
+    bottom:-2.5rem;
+    width: 5rem;
+    height: 0.2rem;
+    background-color: #00e0d0;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+
+.banner-text p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 100;
+    line-height: 2.4rem;
+    color: #ffffff;
+    margin-top: 5rem;
+}
+.btn{
+    margin-top: 5rem;
+    
+}
+
+
+.btn a{
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    background: transparent;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    border: 0.2rem solid var(--hover) ;
+    color: var(--hover);
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+.circle .one{
+    margin-left: 1rem;
+    margin-top: 12rem;
+    margin-bottom: 7rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 0.2rem solid white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.circle .one:hover{
+    background-color: var(--hover);
+    border-color: var(--hover);
+}
+/* ============================
+    banner Part ends
+===========================*/
+/* ============================
+    Story Part Starts
+===========================*/
+#story{
+    padding: 7rem 0rem;
+}
+.story-cont{
+    display: flex;
+    align-items: center;
+}
+
+.left-img{
+    width: 50%;
+}
+.right{
+    width: 50%;
+}
+.right #right-head{
+    font-family: 'Playfair Display', serif;
+    color: var(--heading);
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+.right #right-text{
+    font-family: 'Playfair Display', serif;
+    color: var(--heading);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    padding-top: 2rem;
+}
+.right #right-text span{
+    display: block;
+    margin-top: 2rem;
+}
+/* ============================
+    Story Part ends
+===========================*/
+
+/* ============================
+    Video page Part Starts
+===========================*/
+#video-page{
+    padding: 20rem 0rem;
+    background: linear-gradient(to right,rgba(9, 5, 47,0.9) 0%,rgba(49, 29, 94,0.9) 100%),
+    url(../images/video-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#video-page .container i{
+    font-size: 7rem;
+    color: white;
+}
+#video-page .container #watch{
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin-top: 2rem;
+}
+/* ============================
+    Video page Part ends
+===========================*/
+/* ============================
+    Expertise Part Starts
+===========================*/
+#expertise{
+    padding: 7rem 0rem;
+}
+.common-header{
+    position: relative;
+}
+.common-header:after{
+    position: absolute;
+    content: '';
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -2rem;
+    width: 5rem;
+    height: 0.2rem;
+    background-color: #c6c4c9;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.common-header h3{
+    font-family: 'Playfair Display', serif;
+    color: var(--heading);
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+}
+.common-header p{
+    font-family: 'Playfair Display', serif;
+color: var(--heading);
+font-size: 1.4rem;
+font-weight: 400;
+padding-top: 1rem;
+}
+.expertise-row{
+    margin-top: 6rem;
+}
+.expertise-row .col{
+    padding:0rem 3rem;
+  
+}
+.expertise-row .col .heading{
+    font-family: 'Roboto', sans-serif;
+    color: var(--heading);
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-top: 2.5rem;
+    text-transform: uppercase;
+}
+
+.expertise-row .col .text{
+    font-family: 'Roboto', sans-serif;
+    color: var(--heading);
+    font-size: 1.4rem;
+    font-weight: 100;
+    padding-top: 1rem;
+    line-height: 2.2rem;
+}
+/* ============================
+    Expertise Part ends
+===========================*/
+/* ============================
+    Team Part Starts
+===========================*/
+#team{
+    padding:7rem 0rem;
+     background: linear-gradient(to right,rgba(9, 5, 47,0.9) 0%,rgba(49, 29, 94,0.9) 100%),
+    url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#team .container .common-header h3{
+    color: #ffffff;
+}
+#team .container .common-header p{
+    color: #ffffff;
+}
+.all-members .member{
+    width: 22%;
+  
+}
+.all-members .member .member-img{
+    width: 100%;
+    background-color: #ffffff;
+    padding: 12rem 0rem;
+   
+}
+.all-members{
+    margin-top: 6rem;
+}
+
+.all-members .member .info{
+    border: 0.2rem solid #767489;
+    padding: 2rem ;
+}
+.all-members .member .info .position{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding-top: 0.5rem;
+    color: #fafafa;
+}
+.all-members .member .info .name{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 900;
+        color: #fafafa;
+
+}   
+
+.team-footer p{
+    font-family: 'Roboto', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: #fafafa;
+}
+
+.team-footer{
+    margin-top: 6rem;
+}
+#hire{
+    margin-top: -2rem;
+}
+/* ============================
+    Team Part ends
+===========================*/
+/* ============================
+    Work Part Starts
+===========================*/
+#work{
+    padding: 7rem 0rem;
+}
+.work-menu{
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    
+}
+.work-menu ul li a{
+    color: var(--heading);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-left: 1rem;
+    display: inline-block;
+    padding: 1rem;
+    border: 0.2rem solid #dddddd;
+}
+.div-row{
+    margin-top: 3rem;
+}
+.div-col{
+    width: 20%;
+    padding: 10rem 0rem;
+    background-color: #b6b6b6;
+}
+.div-col-2{
+    width: 20%;
+    padding: 10rem 0rem;
+    background-color: #acacac;
+}
+.div-col-3{
+    width: 20%;
+    padding: 10rem 0rem;
+    background-color: #a1a1a1;
+}
+.div-col-4{
+    width: 20%;
+    padding: 10rem 0rem;
+    background-color: #8a8a8a
+}
+.div-col-5{
+    width: 20%;
+    padding: 10rem 0rem;
+    background-color: #b6b6b6;
+}
+
+.div-row-2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+/* ============================
+    Work Part ends
+===========================*/
+/* ============================
+    review Part Starts
+===========================*/
+#review{
+    padding: 7rem 0rem;
+    background: linear-gradient(rgba(9, 5, 47,0.7) 0%,rgba(49, 29, 94,0.7) 100%),
+    url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#comma{
+    font-family: 'Playfair Display', serif;
+    font-size: 10rem;
+    font-weight: 400;
+    color: #ffffff;
+}
+#review-text{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    width: 70%;
+    margin: 0 auto;
+    color: #ffffff;
+    text-align: center;
+}
+#owner{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    padding-top: 3.5rem;
+}
+#pos{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+#review .container .circle .one{
+    margin-top: 4rem;
+}
+/* ============================
+    review Part ends
+===========================*/
+/* ============================
+    Form Part Starts
+===========================*/
+#form{
+    padding: 7rem 0rem;
+}
+.form-left {
+    width: 50%;
+    
+}
+#form-head{
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #413d4b;
+    text-transform: uppercase;
+}
+.form-left form {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.form-left form input{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--heading);
+    padding: 1rem 2rem ;
+    margin-top: 2rem;
+    width: 46rem;
+}
+
+.form-left form textarea{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--heading);
+    padding: 1rem 2rem ;
+    margin-top: 2rem;
+    width: 46rem;
+}
+.form-right{
+    width: 50%;
+    padding-left: 3rem;
+}
+.form-left .btn{
+    margin-top: 2rem;
+}
+.brand-row {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5rem;
+}
+.brand-row:nth-child(1){
+    margin-left: 0rem;
+}
+.brand-row img{
+    margin-top: 4rem;
+}
+/* ============================
+    Form Part ends
+===========================*/
+/* ============================
+    Footer Part Starts
+===========================*/
+footer{
+    padding: 7rem 0rem;
+    background: linear-gradient(rgba(9, 5, 47,0.9) 0%,rgba(49, 29, 94,0.9) 100%),
+    url(../images/footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.footer-col-1{
+    width: 30%;
+    margin: 0rem 2rem;
+}
+.footer-col-1 p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 2.6rem;
+    padding-top: 1rem;
+}.footer-col-1 ul{
+    margin-top: 3rem;
+}
+.footer-col-1 ul li a:nth-child(1){
+    
+}
+.footer-col-1 ul li a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-right:1rem
+}
+.footer-col-2 {
+    width: 30%;
+    margin: 0rem 2rem;
+}
+.footer-col-2 h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-bottom: 2.4rem;
+}
+
+.footer-col-3 h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-bottom: 2.4rem;
+}
+.footer-col-2 p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #ffffff;
+    position: relative;
+    line-height: 2.6rem;
+    padding-left: 2rem;
+   
+}
+.footer-col-2 p:last-child{
+    padding-top: 1rem;
+}
+.footer-col-2 p i{
+    position: absolute;
+    left: 0px;
+    top: 0.8rem;
+}
+.footer-col-3 ul li a i{
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-top: 3rem;
+    color: #ffffff;
+    padding: 0.8rem;
+    display: inline-block;
+    border: 0.2rem solid #ffffff;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.footer-form input{
+    padding: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #ffffff;
+    background: transparent;
+    border-color: #ffffff;
+}
+.footer-form i{
+    margin-left: 1rem;
+    font-size: 3rem;
+    color: #000;
+    padding: 2rem;
+    display: inline-block;
+    background: #a199b4;
+}
+/* ============================
+    Footer Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/

@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+    float: left;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+.container{
+    max-width: 1170px;
+    margin: 0px auto;
+}
+:root{
+    --color:#02918c;
+    --hover:#cfc91d;
+    --text:#7e8287;
+}
+html{
+    font-size: 62.5%;
+}
+img{
+    vertical-align: middle;
+}
+.clr{
+    clear: both;
+}
+.flex{
+    display: flex;
+}
+.space-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.justify-center{
+    justify-content: center;
+}
+/* ============================
+    Part Starts
+===========================*/
+header{
+    background-color: #02918c;
+    padding: 1.7rem;
+}
+
+.header-logo p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.6rem;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.header-logo p span{
+    color: #cfc91d;
+}
+
+.header-menu ul li a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #fff;
+    margin-left: 5rem;
+    text-transform: uppercase;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+.header-menu ul li a:hover{
+    color:var(--hover)
+}
+
+
+/* ============================
+   header Part ends
+===========================*/
+/* ============================
+    Banner Part Starts
+===========================*/
+#banner{
+    padding: 21rem 0rem;
+    background: linear-gradient(36deg, rgba(0, 0, 0,0.18) 100%, rgba(0, 0, 0,0.18) 0%),
+    url(../images/banner.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner-text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #fff;
+}
+.banner-text h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size:6.8rem;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1.5rem
+}
+.banner-text #second-para{
+    font-family: 'Open Sans', sans-serif;
+    font-size:1.8rem;
+    font-weight: 400;
+    color: #fff;
+}
+.banner-text img{
+    padding-top: 4.5rem;
+}
+.btn{
+    margin-top: 5rem;
+}
+.btn a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #000;
+    display: inline-block;
+    padding: 2rem 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    background-color: var(--hover);
+}
+/* ============================
+    Banner Part ends
+===========================*/
+
+/* ============================
+    About me Part Starts
+===========================*/
+#about-me{
+    padding: 10rem 0rem;
+
+}
+.header p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4.6rem;
+    font-weight: 800;
+    color: var(--color);
+    text-transform: uppercase;
+}
+.content {
+    width: 88rem;
+    margin: 0 auto;
+    padding-top: 4rem;
+}
+.content p{
+    color: var(--text);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 4.4rem;
+}
+.content p span{
+    font-size: 2.3rem;
+    font-weight: 800;
+}
+.about-me-row{
+    padding-top: 10rem;
+}
+.about-me-row .col i{
+    font-size: 3rem;
+    color: var(--color);
+    padding-bottom: 2.5rem;
+}
+
+.about-me-row .col h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--text);
+}
+
+.about-me-row .col{
+    padding:0rem 6rem;
+    position: relative;
+    
+}
+.about-me-row .col:after{
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+    width: 0.2rem;
+    height: 26rem;
+    background-color: #d9dbdb;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.about-me-row .col p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text);
+    line-height: 2.1rem;
+    margin-top: 2.5rem;
+}
+/* ============================
+    About me Part ends
+===========================*/
+#service{
+    background-image: url(../images/banner-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 7rem 0rem;
+}
+.left-content{
+    width: 50%;
+    padding-right: 9rem;
+}
+.serv-head p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4.6rem;
+    font-weight: 800;
+    color: var(--color);
+    padding-bottom: 1rem;
+}
+.serv-head #para{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 4.1rem;
+    color: var(--text);
+}
+.serv-cards{
+   
+}
+.serv-cards i{
+    font-size: 3rem ;
+    color: var(--color);
+    padding-bottom: 1.2rem;
+}
+
+.serv-cards h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--text);
+}
+
+.serv-cards p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text);
+    padding-top: 1.5rem;
+    padding-right: 10rem;
+    line-height: 2.1rem;
+}
+.serv-cards{
+    margin-top: 5rem;
+}
+.second-row{
+    margin-top: 5rem;
+}
+/* ============================
+    Part Starts
+===========================*/
+#my-work{
+    
+    padding: 10rem 0rem;
+}
+
+.header-text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--text);
+    width:68rem;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 4.1rem;
+    margin-top: 2rem;
+}
+.work{
+    margin-top: 7rem;
+}
+.work .work-img{
+    width: 25%;
+    cursor: pointer;
+    position: relative;
+    transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+.work .work-img img{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+.work .work-img:hover .overly{
+    opacity: 1;
+    visibility: visible;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+.work .work-img .overly{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%) ;
+    width: 80%;
+    height: 80%;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(27, 139, 131,0.8);
+    transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+.work .work-img .overly h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #fff;
+}
+.work .work-img .overly p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 4rem;
+}
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Contact Me Part Starts
+===========================*/
+
+.form-page{
+   background-color: #0b0b0b;
+   padding: 7rem;
+   margin-top: 6rem;
+}
+.form-page form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-page form textarea{
+    font-family: 'Open Sans', sans-serif;
+    width: 80%;
+    text-transform:uppercase;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--text);
+    text-align: center;
+    background: transparent;
+    margin-top: 4rem;
+    border: none;
+    border-bottom: 0.2rem solid var(--text);
+}
+.form-page form input:nth-child(1){
+    margin-top: 0px;
+}
+.form-page form input{
+    font-family: 'Open Sans', sans-serif;
+    width: 50%;
+    
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--text);
+    text-align: center;
+    background: transparent;
+    padding: 1.7rem 0rem;
+    margin-top: 4rem;
+    border: none;
+    border-bottom: 0.2rem solid var(--text);
+}
+/* ============================
+    Contact Me Part ends
+===========================*/
+/* ============================
+    footer Part Starts
+===========================*/
+footer{
+    padding: 3rem 0rem;
+    background-color: #000000;
+}
+footer p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--text);
+    text-align: center;
+}
+/* ============================
+    footer Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
