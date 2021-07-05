@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+    float: left;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+.container{
+    max-width: 1170px;
+    margin: 0px auto;
+}
+img{
+    vertical-align: middle;
+}
+.clr{
+    clear: both;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+:root{
+    --hover:#f5d76e;
+    --primary:#28211f;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+
+/* ============================
+    banner Part Starts
+===========================*/
+#banner{
+    margin: 0rem 1.5rem;
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+#banner:after{
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.45;
+    z-index: -1;
+}
+
+header {
+    width: 100%;
+    height: 15vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    
+    align-items: center;
+}
+header .header-logo {
+    padding-top: 3.7rem;
+}
+header ul li a{
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color:#fff;
+    margin-left: 2rem;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+header ul li a:hover{
+    color: #f5d76e;
+
+}
+.banner-text {
+    width: 45rem;
+    padding: 20rem 0rem;
+}
+.banner-text h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 4.8rem;
+    font-weight: 700;
+    color:var(--hover)
+}
+
+.banner-text p{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color:#fff;
+    line-height: 2.4rem;
+    padding-top: 1rem;
+}
+
+
+.banner-text a{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color:#fff;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 1rem 5rem;
+    border: 0.2rem solid #fff;
+    background: transparent;
+    margin-top: 3rem;
+    transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+
+.banner-text a:hover{
+    border-color: var(--hover);
+    background: var(--hover);
+    color: #000000;
+}
+/* ============================
+    banner Part ends
+===========================*/
+/* ============================
+    Second Part Starts
+===========================*/
+#second-page{
+    padding: 10rem 0rem;
+    margin: 0rem 1.5rem;
+}
+.second-text {
+    max-width: 50%;
+    margin: 0 auto;
+}
+.second-text .head{
+    color:#2f2f2f;
+    font-size: 3.2rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+.second-text .head span{
+    border-bottom: 0.2rem solid #2f2f2f ;
+}
+.second-text .content{
+    color:#28211f;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    padding-top: 3rem;
+}
+
+.icon .fa-mug-hot{
+    font-size: 4rem;
+    color: #ececec;
+    margin-top: 7rem;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+.icon .fa-mug-hot:after{
+    position: absolute;
+    content: '';
+    bottom: -1rem;
+    left: 50%;
+    transform: translate(-50%);
+    width: 5rem;
+    height: 0.2rem;
+    background: #ececec;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+.icon .fa-mug-hot:hover:after{
+    background: black;
+}
+.icon .fa-mug-hot:hover{
+    color: black;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+/* ============================
+    Second Part ends
+===========================*/
+
+/* ============================
+    Menu Part Starts
+===========================*/
+#menu{
+    padding: 7rem 0rem;
+    margin: 1.5rem;
+}
+
+.common-header h3{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+.menu-row{
+    margin-top: 4rem;
+}
+.menu-row .menu-col{
+    width: 30%;
+}
+.menu-row .menu-col .img{
+    width: 100%;
+    position: relative;
+}
+.menu-row .menu-col .img .overly{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(255, 255, 255,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.menu-row .menu-col .overly p{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+.menu-row .menu-col .img img{
+    width: 100%;
+    max-width: 100%;
+}
+.menu-row .menu-col{
+    margin: 0rem 2rem;
+}
+.menu-col table{
+    padding: 2.5rem 0rem;
+    display: flex;
+    justify-content: center;
+}
+.menu-col table tr{
+   
+}
+.menu-col table tr .dollar{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--primary);
+}
+.menu-col table tr .head-1{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--primary);
+    padding-right: 11.5rem;
+    padding-top: 0.5rem;
+}
+
+.menu-row .menu-col .img{
+    width: 100%;
+    position: relative;
+}
+.menu-row .menu-col .img .overly-2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(240, 215, 128,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.menu-row .menu-col .overly-2 p{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.btn{
+    margin-top: 2rem;
+}
+.btn a{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-transform: uppercases;
+    color: var(--primary);
+    display: inline-block;
+    padding: 1rem 5rem;
+    border: 0.2rem solid var(--primary);
+}
+/* ============================
+    Menu Part ends
+===========================*/
+/* ============================
+    Testimonial Part Starts
+===========================*/
+#testimonial{
+  padding-bottom: 7rem;
+  margin: 0rem 1.5rem;      
+}
+
+.test-cont{
+    background-image: url(../images/banner-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 4rem;
+}
+
+.test-text{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 9rem 0rem;
+    padding-left: 5rem;
+    float: right;
+}
+.test-text .name{ 
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--hover);
+}
+
+.test-text .review{ 
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #fff;
+    line-height: 2.6rem;
+    padding: 2rem 10rem;
+}
+
+.test-text .circle{
+   
+}
+.test-text .circle .circle-1{
+    width: 1rem;
+    height: 1rem;
+    border:0.2rem solid #fff;
+    border-radius: 50%;
+    margin-left: 1rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/* ============================
+    Testimonial Part ends
+===========================*/
+/* ============================
+    Location Part Starts
+===========================*/
+#location{
+    padding: 7rem 0rem;
+    margin: 0rem 1.5rem;
+}
+
+.location-left{
+    padding: 6rem 5rem;
+    background: #f5d76e;
+    width: 40%;
+}
+.both-sides{
+    margin-top: 4rem;
+}
+.location-left h4{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+
+.location-left p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #28211f;
+    line-height: 2.4rem;
+    padding-top: 1rem;
+}
+.col1 {
+    margin-top: 2rem;
+}
+.col1 table tr .date{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #28211f;
+    padding-right: 10rem;
+}
+.col1 table tr .time{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #28211f;
+}
+
+.right{
+    width: 60%;
+}
+.right iframe{
+    width: 100%;
+    height: 100%;
+}
+/* ============================
+    Location Part ends
+===========================*/
+/* ============================
+    Footer Part Starts
+===========================*/
+footer{
+    padding: 8rem 0rem;
+    background: #39312f;
+}
+
+.links a{
+    color: #fff;
+    font-size: 2rem;
+    margin-left: 2rem;
+    transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+
+.links a:hover{
+    color: var(--hover);
+}
+
+.footer-text #loc{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #fff;
+    padding-top: 2rem;
+}
+.footer-cont{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-text #copy{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--hover);
+    padding-top: 1rem;
+}
+
+.footer-text #design{
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #fff;
+    padding-top: 3rem;
+}
+/* ============================
+    Footer Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
