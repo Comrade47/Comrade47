@@ -1,0 +1,525 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Navigation Section Starts */
+
+.navigation {
+    height:80px;
+    position:relative;
+    background-color: rgba(31, 30, 30, 0.24);
+	transition: 0.3s ease ;
+    font-size: 24px;
+}
+.navigation h1{
+    display: inline-block;
+    font-size: 25px;
+    line-height: 80px;
+    padding-left: 40px;
+}
+.navigation h1 span{
+    color: crimson;
+}
+.navigation ul{
+    line-height: 80px;
+    position: absolute;
+    right:20px;
+    top:0px;
+    font-size: 24px;
+    position: fixed;
+}
+.navigation ul li{
+    list-style:none;
+    float:left;
+}
+.navigation ul li a{
+    text-decoration: none;
+    display:inline-block;
+    color: black;
+    padding-left: 30px;
+    transition:ease 0.3s ;
+}
+.navigation ul li a:hover{
+    color: crimson;
+    
+}
+
+
+
+
+
+/* Navigation Section Ends */
+/* Hero Section Starts */
+.hero{
+    position:relative;
+    height:100vh;
+}
+.hero::before{
+    content: '';
+    background:url(../image/hero-bg.png);
+    background-position: top center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:absolute;
+    left:0px;
+    right:0px;
+    top:0px;
+    bottom:0px;
+    background-color: rgba(31, 30, 30, 0.24);
+    
+}
+.hero-text{
+    position: absolute;
+    top:200px;
+    left:80px;
+    font-size: 32px;
+  
+}
+.hero-text h1:nth-child(3){
+    color: crimson;
+}
+.hero-text a{
+    text-decoration: none;
+    color:black;
+    border: 3px solid crimson;
+    background: transparent;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left:30px;
+    padding-right:30px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: all ease-in-out 0.4s; 
+    width: 300px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.hero-text a:hover{
+    background-color:crimson
+}
+
+/* hero section ends */
+
+
+
+
+/* service page starts */
+.service-page{
+    height: 100vh;
+}
+.top-text{
+    width:450px;
+    text-align:center;
+    margin-left: 450px;
+    margin-top: 100px;
+}
+.top-text h1{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 40px;
+}
+.top-text p{
+   
+    color: rgb(168, 157, 168);
+    padding: 20px;
+    line-height:30px
+}
+.services{
+    width:100%;
+}
+.service-one{
+    position: relative;
+    width: 350px;
+    height:350px;
+    margin-left: 50px;
+    margin-top: 30px;
+    background: url(../image/serviceimage.jpg);
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius:10px;
+    
+}
+
+.service-one::before{
+    content: ""; 
+    position: absolute;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.9;
+    overflow: hidden;
+    z-index:-1;
+    border-radius: 10px;
+}
+
+.service-one img{
+    width: 70px;
+    position:absolute;
+    top: 30px;
+    left: 20px;
+}
+.service-one h1{
+   text-align: left; 
+   text-transform: uppercase;
+   margin-left: 25px;
+   margin-top: 20px;
+}
+.service-one-text{
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    color: white;
+    
+}
+.service-one-text p{
+   padding: 20px;
+   font-weight: normal;
+   line-height:25px;
+}
+
+
+
+
+
+
+
+.service-two{
+    position: relative;
+    width: 350px;
+    height:350px;
+    margin-left: 400px;
+    margin-top: 30px;
+    background: url(../image/serviceimage.jpg);
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius:10px;
+   
+}
+
+.service-two::before{
+    content: ""; 
+    position: absolute;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.9;
+    overflow: hidden;
+    z-index:-1;
+    border-radius: 10px;
+}
+
+.service-two img{
+    width: 70px;
+    position:absolute;
+    top: 30px;
+    left: 20px;
+}
+.service-two h1{
+   text-align: left; 
+   text-transform: uppercase;
+   margin-left: 25px;
+   margin-top: 20px;
+}
+.service-two-text{
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    color: white;
+    line-height: 25px;
+}
+.service-two-text p{
+   padding: 20px;
+   font-weight: normal;
+}
+
+
+
+
+
+
+.service-three{
+    position: relative;
+    width: 350px;
+    height:350px;
+    margin-left: 430px;
+    margin-top: 30px;
+    background: url(../image/serviceimage.jpg);
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius:10px;
+   
+}
+
+.service-three::before{
+    content: ""; 
+    position: absolute;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.9;
+    overflow: hidden;
+    z-index:-1;
+    border-radius: 10px;
+}
+
+.service-three img{
+    width: 70px;
+    position:absolute;
+    top: 30px;
+    left: 20px;
+}
+.service-three h1{
+   text-align: left; 
+   text-transform: uppercase;
+   margin-left: 25px;
+   margin-top: 20px;
+}
+.service-three-text{
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    color: white;
+    
+}
+.service-three-text p{
+   padding: 20px;
+   font-weight: normal;
+   line-height: 25px;
+}
+/* service page ends */
+
+/* Contact Info Page starts */
+
+
+.contact-info-page{
+    width: 100%;
+    height: 50vh;
+}
+#cta{
+    text-transform: uppercase;
+    font-weight:300;
+    margin-left: 500px;
+    margin-top: 70px;
+    font-size: 48px;
+}
+.contact-info-page h1 span{
+    color:crimson;
+}
+
+.phone-box{
+    width: 400px;
+    height: 150px;
+    box-shadow: 2px 3px 5px 4px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    position: relative;
+    margin-left: 70px;
+    margin-top: 20px;
+    float: left;
+}
+
+.phone-box img{
+    width:70px;
+    margin-top: 40px;
+    margin-left: 30px;
+    
+}
+.phone-box-text{
+    position: absolute;
+    left: 120px;
+    top:20px;
+    line-height: 30px;
+}
+
+.phone-box h1{
+    display:inline-block;
+
+}
+
+
+
+
+
+.email-box{
+    width: 400px;
+    height: 150px;
+    box-shadow: 2px 3px 5px 4px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    position: relative;
+    margin-left: 30px;
+    margin-top: 20px;
+    float: left;
+}
+
+.email-box img{
+    width:70px;
+    margin-top: 40px;
+    margin-left: 30px;
+    
+}
+.email-box-text{
+    position: absolute;
+    left: 120px;
+    top:20px;
+    line-height: 30px;
+}
+
+
+
+
+.address-box{
+    width: 400px;
+    height: 150px;
+    box-shadow: 2px 3px 5px 4px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    position: relative;
+    margin-left: 30px;
+    margin-top: 20px;
+    float: left;
+}
+
+.address-box img{
+    width:70px;
+    margin-top: 40px;
+    margin-left: 30px;
+    
+}
+.address-box-text{
+    position: absolute;
+    left: 120px;
+    top:20px;
+    line-height: 30px;
+}
+
+
+/* COntact info page ends */
+
+/* About me page starts */
+
+.aboutme-page{
+    height: 80vh;
+    position: relative;
+    margin-top: 100px;
+}
+.aboutme-page img{
+    width: 250px;
+    margin-left: 150px;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,2);
+
+}
+.aboutme-page-text{
+    width:700px;
+    display: inline-block;
+    position: absolute;
+    left: 440px;
+    top: 0px;
+    
+}
+
+.aboutme-page-text h1{
+    font-size: 45px;
+    font-weight: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.aboutme-page-text h4{
+    padding-top: 20px;
+    letter-spacing: 3px;
+}
+.aboutme-page-text p{
+    line-height: 30px;
+    text-align: justify;
+    padding-top: 40px;
+}
+.aboutme-page span{
+    color:crimson
+}
+
+.aboutme-page-text a{
+    text-decoration: none;
+    color:black;
+    border: 3px solid crimson;
+    background: transparent;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left:30px;
+    padding-right:30px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: all ease-in-out 0.4s; 
+    width: 300px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.aboutme-page-text a:hover{
+    background-color:crimson
+}
+
+
+
+
+/* about me page ends */
+
+
+/* ending-page starts */
+
+.ending-page{
+    height:30vh;
+    background-color: rgb(51, 51, 58);
+}
+
+.ending-page h1{
+    text-align: center;
+    color:white;
+    padding-top: 40px;
+    
+}
+.ending-page h1 span{
+    color: crimson;
+}
+
+.ending-page p{
+    text-align: center;
+    color: White;
+    padding-top:10px
+}
+.links-menu{
+    margin-left: 570px;
+    margin-top: 10px;
+}
+
+.links-menu ul li{
+    list-style:none;
+    float: left;
+}
+.links-menu ul li img{
+    width: 35px;
+}
+.links-menu ul li a{
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+
+/* ending-page ends */

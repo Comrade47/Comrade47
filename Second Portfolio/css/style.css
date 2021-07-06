@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-area{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+}
+.navbar-area .logo{
+    font-size: 32px;
+    margin-left: 100px;
+    display:inline-block;
+    float:left;
+    margin-top: 20px;
+    color: white
+}
+.navbar-area .logo span{
+    color: crimson;
+}
+.menubar{
+    margin-right: 100px;
+    margin-top: 20px;
+    
+}
+.menubar ul li{
+    list-style: none;
+    float:left;
+}
+.menubar ul li a{
+    text-decoration: none;
+    display: inline-block;
+    padding-right: 20px;
+    transition: color 0.4s ease;
+    color: white;
+}
+
+.menubar ul li a:hover{
+    color: crimson;
+}
+
+
+/* main-content starts */
+
+.main-content{
+    height:100vh;
+    background: url(../Images/banner.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    position:relative;
+}
+
+.frontpage-texts{
+    color: white;
+    margin-top: 150px;
+    margin-left: 80px;
+}
+
+.frontpage-texts .text-1{
+    font-size: 27px;
+    font-weight: bolder;
+}
+
+.frontpage-texts .text-2{
+    font-size: 70px;
+    font-weight: 700;
+    color: crimson;
+}
+
+.frontpage-texts .text-3{
+    font-size: 32px;
+}
+.button{
+    margin-top: 30px;
+}
+.frontpage-texts a{
+    text-decoration: none;
+    padding: 15px 40px;
+    background-color:crimson ;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 23px;
+    transition: ease 0.3s;
+    text-transform: uppercase;
+}
+
+.frontpage-texts .button a:hover{
+    background-color:transparent;
+    border: 3px solid crimson;
+}
+
+
+
+
+
+
+/* main-content ends */
+
+
+
+/* secondpage starts */
+
+.second-page{
+    height: 90vh;
+    margin-top: 330px;
+}
+.second-page .top-texts{
+   text-align: center;
+  
+}
+.second-page .top-texts p{
+    color: crimson;
+    
+}
+.second-page .mypic{
+    margin-left: 150px;
+    float: left;
+}
+.second-page .mypic img{
+    width:250px;
+    border-radius:10px;
+    margin-top: 20px;
+    object-fit: cover;
+    transition: all .3s ease;
+}
+.second-page .mypic img:hover{
+    transform: scale(1.05);
+    box-shadow: 8px 15px 10px 2px rgba(0, 0, 0,0.4);
+}
+
+.second-page-text{
+    float: left;
+    margin-left: 80px;
+    margin-top: 50px;
+    width: 800px;
+    position: relative;
+}
+.second-page-text h1{
+    font-size: 26px;
+    display:inline-block;
+}
+#first-text{
+    color: crimson;
+}
+.second-page-text p{
+    margin-top: 20px;
+    display:inline-block;
+    float: left;
+    text-align: justify;
+    line-height: 30px;
+}
+.button-2{
+  position: absolute;
+  top: 260px;
+  left: 0px;
+ 
+}
+
+.second-page-text a{
+    text-decoration: none;
+    padding: 15px 40px;
+    background-color:crimson ;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 23px;
+    transition: ease 0.3s;
+    text-transform: uppercase;
+}
+
+.second-page-text .button-2 a:hover{
+    background-color:transparent;
+    border: 3px solid crimson;
+    color: black;
+}
+/* secondpage ends */
+
+
+
+
+
+
+/* Third-page starts */
+
+.third-page{
+    height: 90vh;
+    background-color: #111;
+    
+}
+.third-page-texts{
+    padding-top: 100px;
+
+}
+.third-page-texts h1{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+
+}
+.third-page-texts p{
+    color: crimson;
+    text-align: center;
+}
+.third-page-boxes{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.third-page-boxes .first-box{
+    width:350px;
+    height: 250px;
+    background-color: rgb(37, 36, 36);
+    border-radius: 20px;
+    transition: all ease .3s;
+    margin-left: 70px;
+}
+.third-page-boxes .first-box:hover{
+    background-color: crimson;
+    color: black;
+    padding:5px
+}
+
+
+
+.third-page-boxes .first-box img{
+    width: 50px;
+    margin-left: 150px;
+    margin-top:20px;
+    
+}
+.third-page-boxes .first-box h4{
+    padding-top: 10px;
+    text-align: center;
+    color:white;
+}
+.third-page-boxes .first-box p{
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+.third-page-boxes .second-box{
+    width:350px;
+    height: 250px;
+    background-color: rgb(37, 36, 36);
+    border-radius: 20px;
+    transition: all ease .3s;
+}
+.third-page-boxes .second-box:hover{
+    background-color: crimson;
+    color: black;
+    padding:5px;
+}
+
+
+.third-page-boxes .second-box img{
+    width: 50px;
+    margin-left: 150px;
+    margin-top:20px;
+    
+}
+.third-page-boxes .second-box h4{
+    padding-top: 10px;
+    text-align: center;
+    color:white;
+}
+.third-page-boxes .second-box p{
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+.third-page-boxes .third-box{
+    width:350px;
+    height: 250px;
+    background-color: rgb(37, 36, 36);
+    border-radius: 20px;
+    transition: all ease .3s;
+    margin-right: 70px;
+}
+.third-page-boxes .third-box:hover{
+    background-color: crimson;
+    color: black;
+    padding:5px;
+}
+
+
+.third-page-boxes .third-box img{
+    width: 50px;
+    margin-left: 150px;
+    margin-top:20px;
+    
+}
+.third-page-boxes .third-box h4{
+    padding-top: 10px;
+    text-align: center;
+    color:white;
+}
+.third-page-boxes .third-box p{
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+/* third-page ends */
+
+
+
+
+
+
+/* Fourth-page starts */
+.fourth-page{
+    height: 80vh;
+}
+.bothsides {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.fourth-page-texts{
+    margin-top: 70px;
+}
+.fourth-page-texts h4{
+    font-size: 35px;
+    text-align:center;
+    font-weight: normal;
+}
+.fourth-page-texts p{
+    text-align: center; 
+    color: crimson;
+}
+.fourth-page-leftside{
+    width: 550px;
+    margin-left: 100px;
+    margin-top:50px;
+}
+.fourth-page-leftside table{
+    margin-top: 30px;
+}
+.fourth-page-leftside table tr td{
+    padding-left: 10px;
+}
+.fourth-page-leftside table tr td img{
+    width: 40px;
+}
+.fourth-page-rightside form{
+    margin-top:20px;
+    
+}
+.fourth-page-rightside{
+    margin-right: 150px;
+    position:relative;
+}
+.fourth-page-rightside input:nth-child(1){
+    width: 270px;
+    height:40px;
+    border-radius: 5px;
+}
+.fourth-page-rightside input:nth-child(2){
+    width:200px;
+    height:40px;
+    border-radius: 5px;
+   
+}
+/* .fourth-page-rightside input:nth-child(3){
+    width:300px;
+    height:40px;
+    border-radius: 5px;
+} */
+.fourth-page-rightside textarea{
+    margin-top: 10px;
+    width:470px;
+    height:40px;
+    border-radius: 5px;
+}
+.button-3{
+    position:absolute;
+    top:180px;
+    left:0px;
+}
+.fourth-page-rightside a{
+    text-decoration: none;
+    padding: 15px 40px;
+    background-color:crimson ;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 23px;
+    transition: ease 0.3s;
+    text-transform: uppercase;
+
+}
+
+.fourth-page-rightside a:hover{
+    background-color:transparent;
+    border: 3px solid crimson;
+    color: black;
+}
+
+
+
+
+/* fourth-page ends */
+
+
+
+/* Fitfth page starts */
+.fifth-page{
+    height: 90vh;
+    background-color: #111;
+}
+.fifth-page-toptexts{
+    padding-top: 100px;
+}
+.fifth-page-toptexts h1{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    text-transform:uppercase;
+}
+.fifth-page-toptexts p{
+    text-align: center;
+    color: crimson;
+}
+.fifth-page .all-cards{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.fifth-page .all-cards .card-1{
+    width: 350px;
+    height:300px;
+    background-color:rgb(37, 36, 36);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+
+}
+.fifth-page .all-cards .card-1 p{
+    padding: 10px;
+    text-align: justify;
+    max-width: 250px;
+    line-height: 30px;
+}
+.fifth-page .all-cards .card-1 img{
+    width:150px;
+    height:150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid crimson;
+}
+
+
+.fifth-page .all-cards .card-2{
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color:rgb(37, 36, 36) ;
+    border-radius: 20px;
+    transition: all .3s ease;
+}
+
+.fifth-page .all-cards .card-2 img{
+    height: 150px;
+    width:150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border:3px solid crimson;
+}
+
+.fifth-page .all-cards .card-2 h3{
+    color: white;
+}
+
+.fifth-page .all-cards .card-2 p{
+    color: white;
+    max-width:250px;
+    line-height: 30px;
+
+}
+
+.fifth-page .all-cards .card-3{
+    width: 350px;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color:rgb(37, 36, 36);
+    border-radius: 20px;
+    transition:all .3s ease;
+}
+.fifth-page .all-cards .card-3 img{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border:3px solid crimson;
+}
+
+.fifth-page .all-cards .card-3 h3{
+    color: white;
+}
+
+.fifth-page .all-cards .card-3 p{
+    color: white; 
+    padding: 10px;
+    line-height: 30px;
+    max-width:250px;
+    text-align: justify;
+}
+
+.all-cards .card-1:hover{
+    background-color:crimson;
+}
+.all-cards .card-1:hover{
+    transform: scale(1.05);
+}
+
+.all-cards .card-2:hover{
+    background-color: crimson;
+    transform: scale(1.05);
+}
+
+.all-cards .card-3:hover{
+    transform: scale(1.05);
+    background-color: crimson;
+}
+/* fifth page ends */
+
+/* Footer */
+
+.footer{
+    height: 10vh;
+    background-color: crimson;
+}
+.footer p{
+    color: white;
+    text-align: center;
+    line-height: 10vh;
+}
+
