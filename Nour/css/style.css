@@ -1,0 +1,1302 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+    float: left;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+.container{
+    max-width: 1170px;
+    margin: 0px auto;
+}
+img{
+    vertical-align: middle;
+}
+.clr{
+    clear: both;
+}
+html{
+    font-size: 62.5%;
+}
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.align-center{
+    align-items: center;
+}
+:root{
+    --hover:#F3C26B;
+}
+.text-center{
+    text-align: center;
+}
+
+/* ============================
+    Part Starts
+===========================*/
+#banner{
+    
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+#banner:after{
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.2;
+    z-index: -1;
+}
+header{
+    padding: 2rem 0rem;
+    border-bottom: 0.1rem solid var(--hover);
+}
+header .header-logo h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--hover);
+    text-transform: uppercase;
+}
+nav ul li a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 0rem 0rem;
+    display: inline-block;
+    margin-left: 2rem;
+    text-transform: uppercase;
+    position: relative;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+nav ul li a:hover{
+    color: var(--hover);
+}
+nav ul li a:hover:after{
+    width: 100%;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+nav ul li a:after{
+    position: absolute;
+    content: '';
+    left:0px;
+    bottom: -1rem;
+    width: 0%;
+    height:0.2rem;
+    transform: scale(0);
+    background-color: var(--hover);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.link a{
+    font-size: 2rem;
+    color: #fff;
+    margin-left: 2rem;
+    transition:all linear 0.3s;
+    -moz-transition:all linear 0.3s;
+    -ms-transition:all linear 0.3s;
+    -o-transition:all linear 0.3s;
+    -webkit-transition:all linear 0.3s;
+}
+.link a:hover{
+    color: var(--hover);
+}
+.banner-texts{
+    padding: 8rem 0rem;
+    margin-left: 15rem;
+}   
+.banner-texts h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+}
+.banner-texts h1:nth-child(1)::after{
+    position: absolute;
+    left: -6rem;
+    top: 3rem;
+    width: 5rem;
+    height: 0.6rem;
+    background-color: var(--hover);
+    content: '';
+}
+.banner-texts h1 span{
+    color: var(--hover);
+}
+
+.banner-texts .title{
+    background-color: rgba(65, 69, 72,0.9);
+    width: 50%;
+    margin-top: 3rem;
+}
+.banner-texts .title p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #e4d1d1;
+    padding: 2rem;
+    position: relative;
+}
+.banner-texts .title p:after{
+    position: absolute;
+    content: '';
+    right: 0px;
+    top: 2.5rem;
+    height: 2rem;
+    width: 0.2rem;
+
+    background-color: var(--hover);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+
+.btn{
+    margin-top: 5rem;
+}
+.btn a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    transition: all linear 0.4s;
+    letter-spacing: 0.3rem;
+    background-color: var(--hover);
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+.btn a:hover{
+    background-color: #fff;
+    color: var(--hover);
+}
+/* ============================
+    about-me Part ends
+===========================*/
+#about-me{
+    padding: 10rem 0rem;
+    background-color: #343436;
+}
+
+.leftside{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+}
+.leftside:after{
+    position: absolute;
+    left: 2rem;
+    top: 10rem;
+    width: 7rem;
+    height: 75%;
+    content: '';
+    background-color: var(--hover);
+    z-index: -1;
+}
+.leftside:before{
+    position: absolute;
+    left: 2rem;
+    bottom: -2rem;
+    width: 65%;
+    height: 7rem;
+    content: '';
+    background-color: var(--hover);
+    z-index: -1;
+}
+.leftside img{
+    width: 70%;
+}
+
+.rightside{
+    width: 50%;
+    
+}
+.rightside #heading{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--hover);
+    position: relative;
+    padding-left: 7rem;
+}
+
+.rightside #address{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+}
+.rightside #content{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #9b9b9b;
+    line-height: 2.6rem;
+    padding-top: 3rem;
+}
+.rightside #content span{
+    display: block;
+    padding-top: 1rem;
+}
+.rightside #heading:after{
+    position: absolute;
+    left:0rem;
+    top: 1.7rem;
+    content: '';
+    width: 5rem;
+    height: 0.2rem;
+    background-color: var(--hover);
+}
+.info .col-1{
+    background-color: #2F2F31;
+    padding: 4rem 3rem;
+    margin-top: 3rem;
+}
+.info .col-1 .heading:nth-child(1){
+    padding-top: 0rem;
+}
+.info .col-1 .heading{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    padding-top: 1.5rem;
+}
+
+.info .col-1 .heading span{
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-left: 1rem;
+}
+.social-links{
+    margin-top: 4rem;
+}
+.social-links p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #9b9b9b;
+}
+.social-links ul {
+    position: relative;
+    padding-left: 5rem;
+}
+.social-links ul:before{
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    width: 5rem;
+    height: 0.2rem;
+    background-color: #fff;
+    content: '';
+}
+.social-links ul li a{
+    font-size: 2rem;
+    display: inline-block;
+    color: #9b9b9b;
+    margin-left: 2rem;
+    
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+.social-links ul li a:hover{
+    color: var(--hover);
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+/* ============================
+    about-me Part Starts
+===========================*/
+/* ============================
+    My skills Part ends
+===========================*/
+#my-skills{
+    padding: 8rem 0rem;
+    background-color: #2F2F31;
+}
+.common-header{
+    position: relative;
+}
+.common-header:after{
+    position: absolute;
+    bottom: -3rem;
+    left: 50%;
+    transform: translate(-50%);
+    width: 7rem;
+    content: '';
+    height: 0.3rem;
+    background-color: var(--hover);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+.common-header p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--hover);
+
+}
+
+.common-header h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    
+}
+.skill-row{
+    margin-top: 5rem;
+    
+}
+.skill-row .skill-col:nth-child(1){
+    margin-left: 7rem;
+}
+.skill-row .skill-col{
+    margin-left: 7rem;
+    width: 40%;
+}
+.skill-row .skill-col .skill-4{
+    position: relative;
+    margin-top: 5rem;
+}
+.skill-row .skill-col .skill-4:after{
+    position: absolute;
+    content: '';
+    left: 0px;
+    bottom: -2rem;
+    width: 100%;
+    height: 0.5rem;
+    border-radius: 0.3rem;
+    background-color: #444444;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+}
+
+.skill-row .skill-col .skill-4:before{
+    position: absolute;
+    content: '';
+    left: 0px;
+    z-index: 1;
+    bottom: -2rem;
+    width: 78%;
+    height: 0.5rem;
+    border-radius: 0.3rem;
+    background-color: var(--hover);
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+   
+}
+.skill-row .skill-col .skill-3{
+    position: relative;
+    margin-top: 5rem;
+}
+.skill-row .skill-col .skill-3:after{
+    position: absolute;
+    content: '';
+    left: 0px;
+    bottom: -2rem;
+    width: 100%;
+    height: 0.5rem;
+    border-radius: 0.3rem;
+    background-color: #444444;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+}
+
+.skill-row .skill-col .skill-3:before{
+    position: absolute;
+    content: '';
+    left: 0px;
+    z-index: 1;
+    bottom: -2rem;
+    width: 95%;
+    height: 0.5rem;
+    border-radius: 0.3rem;
+    background-color: var(--hover);
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+   
+}
+.skill-row .skill-col .skill-2{
+    position: relative;
+    margin-top: 5rem;
+}
+.skill-row .skill-col .skill-2:after{
+    position: absolute;
+    content: '';
+    left: 0px;
+    bottom: -2rem;
+    width: 100%;
+    height: 0.5rem;
+    border-radius: 0.3rem;
+    background-color: #444444;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+}
+
+.skill-row .skill-col .skill-2:before{
+    position: absolute;
+    content: '';
+    left: 0px;
+    z-index: 1;
+    bottom: -2rem;
+    width: 80%;
+    height: 0.5rem;
+    border-radius: 0.3rem;
+    background-color: var(--hover);
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+   
+}
+.skill-row .skill-col .skill{
+    position: relative;
+    margin-top: 5rem;
+}
+.skill-row .skill-col .skill:after{
+    position: absolute;
+    content: '';
+    left: 0px;
+    bottom: -2rem;
+    width: 100%;
+    height: 0.5rem;
+    border-radius: 0.3rem;
+    background-color: #444444;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+}
+
+.skill-row .skill-col .skill:before{
+    position: absolute;
+    content: '';
+    left: 0px;
+    z-index: 1;
+    bottom: -2rem;
+    width: 90%;
+    height: 0.5rem;
+    border-radius: 0.3rem;
+    background-color: var(--hover);
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+   
+}
+.skill-col .skill-4 p span{
+    position: absolute;
+    right: -1rem;
+}
+.skill-col .skill-4 p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    position: relative;
+}
+.skill-col .skill-2 p span{
+    position: absolute;
+    right: -1rem;
+}
+.skill-col .skill-2 p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    position: relative;
+}
+.skill-col .skill-3 p span{
+    position: absolute;
+    right: -1rem;
+}
+.skill-col .skill-3 p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    position: relative;
+}
+.skill-col .skill p span{
+    position: absolute;
+    right: -1rem;
+}
+.skill-col .skill p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    position: relative;
+}
+/* ============================
+    My skills Part Starts
+===========================*/
+/* ============================
+    Resume Part ends
+===========================*/
+#resume{
+    padding: 8rem 0rem;
+    background-color: #343436;
+}
+.resume-col .date{
+    position: relative;
+}
+.resume-col .date:after{
+    position: absolute;
+    left: -3rem;
+    content: '';
+    top: 50%;
+    transform: translate(-50%);
+    width: 3rem;
+    height: 0.4rem;
+    background-color: #2F2F31;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    z-index: 1;
+}
+.resume-col .date p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+    padding: 1.5rem;
+    background-color: #2F2F31;
+    display: inline-block;
+}
+.resume-row{
+    position: relative;
+}
+.resume-row:after{
+    position: absolute;
+    width: 0.2rem;
+    height: 100%;
+    top: 0px;
+    left: -3rem;
+    content: '';
+    background-color: #2F2F31;
+}
+.resume-col {
+    margin-top: 3rem;
+    
+}
+
+.resume-col .resume{
+    padding: 3rem;
+    margin-top: 2rem;
+    background-color: #2F2F31;
+}
+.resume-col .resume .top .icon i{
+    font-size: 3rem;
+    color: var(--hover);
+    padding: 1rem;
+    background-color:#2F2F31 ;
+}
+.resume-col .resume .top{
+    position: relative;
+    padding: 2rem 0rem;
+    border-bottom: 0.2rem solid #2B2B2D;
+}
+.resume-col .resume .top .icon-2{
+    position: absolute;
+    right: 0px;
+}
+.resume-col .resume .top .icon-2 i{
+    font-size: 5rem;
+    color: rgba(155, 155, 155,0.6);
+    padding: 1rem;
+    
+}
+.resume-col .resume .top .text {
+    margin-left: 2rem;
+}
+.resume-col .resume .top .text h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+.resume-col .resume .main p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: #9e9e9e;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.resume-col .resume .top .text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #9e9e9e;
+}
+.resume-row:nth-child(1){
+    margin-left: 0rem;
+}
+.resume-row{
+    margin-left: 5rem;
+}
+.all-row{
+    display: flex;
+    margin-top: 7rem;
+}
+/* ============================
+    Resume Part Starts
+===========================*/
+/* ============================
+    Review Part ends
+===========================*/
+#review{
+    padding: 9rem 0rem;
+    background-image:url(../images/banner-2.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+#review:after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: -1;
+}
+.review-col{
+    margin-left: 5rem;
+}
+.review-col .number{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4.4rem;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+}
+.review-col .number:after{
+    position: absolute;
+    left: -3rem;
+    content: '';
+    top: 50%;
+    transform: translate(-50%);
+    width: 4rem;
+    border-radius: 0.3rem;
+    height: 0.3rem;
+    background-color: var(--hover);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+}
+.review-col .platform{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #fff;
+    display: inline-block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 4rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    background-color: rgba(44, 43, 42,0.8);
+}
+/* ============================
+    Review Part Starts
+===========================*/
+/* ============================
+    Service Part ends
+===========================*/
+#service{
+    padding: 7rem 0rem;
+    background-color: #2F2F31;
+}
+.all-services:last-child{
+    margin-top: 3rem;
+}
+.all-services{
+    margin-top: 10rem;
+}
+.all-services .service .service-head .font-icon i{
+    font-size: 5rem;
+    color: var(--hover);
+}
+.all-services .service .service-head .font-icon {
+    position: relative;
+}
+.all-services .service .service-head .font-icon p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 7.4rem;
+    font-weight: 700;
+    position: absolute;
+    right: 0px;
+    color: rgba(155, 155, 155,0.6);
+}
+.all-services .service .service-head  #head{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 2rem;
+    position: relative;
+}
+.all-services .service .service-head  #head:after{
+    position: absolute;
+    left: 0px;
+    bottom: -2rem;
+    width: 6rem;
+    border-radius: 0.3rem;
+    height: 0.2rem;
+    content: '';
+    background-color: var(--hover);
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+    transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -ms-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+}
+.all-services .service{
+    padding: 4rem;
+    width: 30%;
+    margin-left: 3rem;
+    transition: all ease-in-out 0.5s;
+    background-color: #343436;
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
+    -ms-transition: all ease-in-out 0.5s;
+    -o-transition: all ease-in-out 0.5s;
+}
+
+.all-services .service:hover{
+    box-shadow: 0 0.5rem 0.8rem 0rem #000000;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+.all-services .service:hover .service-head #head:after{
+    width: 15rem;
+}
+.all-services .service .service-text {
+    margin-top: 5rem;
+}
+.all-services .service .service-text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #9b9b9b;
+    line-height: 2.8rem;
+}
+/* ============================
+    Service Part Starts
+===========================*/
+/* ============================
+    Portfolio Part ends
+===========================*/
+#portfolio{
+    padding: 9rem 0rem;
+    background-color: #343436;
+}
+
+.port-nav{
+    margin-top: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.port-nav nav ul li a{
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+    font-weight: 400;
+}
+.port-images{
+    margin-top:6rem;
+}
+.port-img{
+    width: 30%;
+    position: relative;
+    z-index: 1;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+.port-img:hover .overly{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+.port-img .overly{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    border: 1rem solid #fff;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.8;
+    display: flex;
+    transition: all ease-out 0.3s;
+    transform: scale(0);
+    align-items: flex-end;
+    padding: 5rem;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    -webkit-transition: all ease-out 0.3s;
+    -moz-transition: all ease-out 0.3s;
+    -ms-transition: all ease-out 0.3s;
+    -o-transition: all ease-out 0.3s;
+}
+.port-img .overly .overly-text #head{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0.3rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.port-img .overly .overly-text #head:after{
+    position: absolute;
+    left: -3rem;
+    top: 1.5rem;
+    content: '';
+    width: 2rem;
+    height: 0.3rem;
+    background-color: var(--hover);
+    
+}
+.port-img .overly .overly-text #text{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--hover);
+    letter-spacing: 0.3rem;
+}
+.port-img img{
+    width: 100%;
+    max-width: 100%;
+}
+/* ============================
+    Portfolio Part Starts
+===========================*/
+/* ============================
+    Clients Part Starts
+===========================*/
+#client{
+    padding: 9rem 0rem;
+    background-color: #2F2F31;
+}
+.client-row{
+    margin-top: 8rem;
+}
+.client-row .client-col .head img{
+    border-radius: 50%;
+    object-fit: cover;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.client-row .client-col .head .info{
+    margin-left: 2rem;
+}
+.client-row .client-col .head .info .name{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.client-row .client-col .head .info .position{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--hover);
+   
+}
+
+.client-row .client-col {
+    width: 45%;
+    padding: 4rem 3rem;
+    background-color: #343436;
+}
+
+.client-row .client-col .body p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #9b9b9b;
+    line-height: 2.8rem;
+    padding-top: 2rem;
+}
+.arrow-btns{
+margin-top: 3rem;
+}
+.arrow-btns a {
+    font-size: 2rem;
+    color: var(--hover);
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 0.2rem solid var(--hover);
+    margin-left: 2.5rem;
+}
+/* ============================
+    Clients Part ends
+===========================*/
+/* ============================
+    Blog Part Starts
+===========================*/
+#blog{
+    padding: 9rem 0rem;
+    background-color: #343436;
+}
+
+.all-cards .card{
+    width: 30%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.all-cards{
+    margin-top: 10rem;
+    padding-bottom: 8rem;
+    border-bottom: 0.2rem solid #2F2F31;
+}
+.all-cards .card .card-img:hover img{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+.all-cards .card :hover .card-img {
+    width: 100%;
+}
+.all-cards .card img{
+    width: 100%;
+    max-width: 100%;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+.all-cards .card .card-text{
+    padding: 3rem;
+    background-color: #2F2F31;
+    width: 100%;
+    height: 100%;
+}
+.all-cards .card .card-text .date{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--hover);
+    letter-spacing: 0.1rem;
+}
+
+.all-cards .card .card-text h5{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: #fff;
+    padding-top: 2rem;
+}
+.all-cards .card .card-text a{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 3rem;
+}
+.all-cards .card .card-text span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #9b9b9b;
+    display: block;
+    line-height: 2.8rem;
+    padding-top: 3rem;
+}
+.brand{
+    padding: 2rem 0rem;
+}
+.brand .brand-img{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2rem;
+}
+.brand img{
+    
+    object-fit: cover;
+   
+}
+/* ============================
+    Blog Part ends
+===========================*/
+/* ============================
+    Form Part Starts
+===========================*/
+#form{
+    padding: 9rem 0rem;
+    background-color: rgba(47, 47, 49,1);
+    position: relative;
+    z-index: 1;
+}
+#form .overly{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    z-index: -1;
+    overflow: hidden;
+}
+#form .overly img{
+    width: 100%;
+    max-width: 100%;
+}
+
+.contact-row .contact-col .contact-head i{
+    font-size: 2rem;
+    color: var(--hover);
+    padding: 1rem;
+    background-color: #2F2F31;
+}
+
+.contact-row .contact-col .contact-head  h5{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    padding-left: 2rem;
+}
+.contact-row .contact-col .contact-text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #9b9b9b;
+}
+.contact-row{
+    margin-top: 8rem;
+}
+.contact-row .contact-col{
+    padding: 3rem;
+    width: 30%;
+    background-color: #343436;
+}
+.contact-row .contact-col .contact-text span{
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #9b9b9b;
+}
+.contact-row .contact-col .contact-text {
+    position: relative;
+    margin-top: 2rem;
+}
+.contact-row .contact-col .contact-text .icon-loc{
+    position: absolute;
+    right: 0px;
+    top:0px
+}
+.contact-row .contact-col .contact-text .icon-loc i{
+    font-size: 3rem;
+    color: #717172;
+}
+
+
+form{
+    width: 80%;
+    margin:0 auto;
+    margin-top: 5rem;
+    padding: 3rem;
+    background-color:#343436 ;
+}
+form input{
+    padding: 1rem;
+    border:0.2rem solid #29292D ;
+    background-color:#343436;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #9b9b9b;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+form textarea{
+    padding: 1rem;
+    border:0.2rem solid #29292D ;
+    background-color:#343436;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #9b9b9b;
+    width: 100%;
+    margin-top: 2rem;
+}
+form .btn a{
+    display: block;
+}
+/* ============================
+    Form Part ends
+===========================*/
+/* ============================
+    footer Part Starts
+===========================*/
+footer{
+    padding: 4rem 0rem;
+    background-color:#343436;
+}
+footer .social-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .social-links ul:before{
+    display: none;
+}
+
+footer .social-links ul li a{
+    color: white;
+    margin-left: 4rem;
+}
+footer h5{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    margin-left: 9rem;
+    margin-top: 3rem;
+}
+/* ============================
+    footer Part ends
+===========================*/
+
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
