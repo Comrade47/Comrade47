@@ -1,0 +1,1171 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+    float: left;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+.container{
+    max-width: 1250px;
+    margin: 0px auto;
+}
+html{
+    font-size: 62.5%;
+}
+img{
+    vertical-align: middle;
+}
+.clr{
+    clear: both;
+}
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-around{
+    justify-content: space-around;
+}
+:root{
+    --hover:#00e0d0;
+}
+.align-center{
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+
+/* ============================
+    Banner Part Starts
+===========================*/
+#banner{
+    
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+header{
+    border-bottom: 0.1rem solid #ffffff;
+}
+.header-cont{
+    display: flex;
+    align-items: center;
+    padding: 5rem;
+    
+    justify-content: space-between;
+}
+header nav ul li:nth-child(1){
+    margin-left: 0rem;
+}
+header nav ul li a{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #ffffff;
+    display: inline-block;
+    margin-left: 3rem;
+    position: relative;
+    text-transform: uppercase;
+}   
+header nav ul li a:hover:after{
+    width: 100%;
+    
+}
+header nav ul li a:after{
+    position: absolute;
+    content: '';
+    bottom: -1rem;
+    left: 0px;
+    transition: all ease-in 0.2s;
+    width: 0%;
+    height: 0.2rem;
+    background-color: #ffffff;
+    -webkit-transition: all ease-in 0.2s;
+    -moz-transition: all ease-in 0.2s;
+    -ms-transition: all ease-in 0.2s;
+    -o-transition: all ease-in 0.2s;
+}
+
+header .header-links a{
+    font-size: 3rem;
+    color: white;
+    margin-left: 1.5rem;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+header .header-links a:hover{
+    color: #D43550;
+}
+.banner-texts{
+    padding-top: 16rem;
+    padding-bottom: 12rem;
+    margin: 0 auto;
+  
+}
+.banner-texts p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom:2rem;
+}
+
+
+.banner-texts h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 7rem;
+    font-weight: 900;
+    margin-top: -1rem;
+    color: #ffffff;
+    text-transform: uppercase;
+
+}
+.btn {
+    margin-top: 3rem;
+}
+.btn a{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #ffffff;
+    display: inline-block;
+    padding: 2rem 4rem;
+    background-color: black;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+}
+.btn a:hover{
+    color: #000000;
+}
+.btn a:hover:after{
+    width: 100%;
+    
+}
+.btn a:after{
+    position: absolute;
+    content: '';
+    right: 0px;
+    top: 0px;
+    width: 0.3rem;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: -1;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+/* ============================
+    Banner Part ends
+===========================*/
+/* ============================
+    Second-page Part Starts
+===========================*/
+#second-page{
+    padding: 10rem 0rem;
+}
+.rightside{
+    width: 50%;
+    position: relative;
+}
+
+.rightside::after {
+	position: absolute;
+	content: '';
+	top: 7rem;
+	right: -8rem;
+	transform: translate(-50%);
+	width: 42rem;
+	height: 42rem;
+	border: 1rem solid #D43550;
+	-webkit-transform: translate(-50%);
+	-moz-transform: translate(-50%);
+	-ms-transform: translate(-50%);
+	-o-transform: translate(-50%);
+}
+
+.rightside #img-1{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    box-shadow: 0 0.5rem 0.8rem 0 rgba(0, 0, 0, 0.8);
+    
+}
+.rightside #img-2{
+    box-shadow: 0 0.5rem 0.8rem 0 rgba(0, 0, 0, 0.8);
+    position: absolute;
+    left: 0px;
+    top: 10rem;
+   
+}
+.leftside {
+    width: 50%;
+}
+.leftside texts{
+    width: 80%;
+    margin: 0 auto;
+}
+.leftside p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #818181;
+    letter-spacing: 0.12rem;
+}
+.leftside span{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #818181;
+    letter-spacing: 0.12rem;
+    line-height: 2.6rem;
+    padding-right: 10rem;
+    
+}
+.leftside h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+    line-height: 8rem;
+}
+.leftside .btn a:hover{
+    color: #ffffff;
+} 
+.leftside .btn a:after{
+    background-color: #D43550;
+}
+/* ============================
+    Second-page Part ends
+===========================*/
+
+/* ============================
+    Third page Part Starts
+===========================*/
+#third-page{
+    padding: 9rem 0rem ;
+    background-color: #F4F4F4;
+    border-bottom: 0.2rem solid #000000;
+}
+
+.common-header .sub-title{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #818181;
+    letter-spacing: 0.12rem;
+}
+.common-header .nested-title{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    color: #818181;
+    letter-spacing: 0.12rem;
+    margin-top: 2rem;
+}
+.common-header h4{
+    font-family: 'Oswald', sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000;
+    letter-spacing: 0.12rem;
+}
+
+.yt{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+.yt .video-img{
+    width: 100%;
+    position: relative;
+}
+.yt .video-img img{
+    width: 100%;
+    max-width: 100%;
+   
+}
+.yt .video-img .overly{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+.yt .video-img .overly i{
+    color: white;
+    font-size: 2rem;
+    padding: 4rem;
+    display: inline-block;
+    background-color: #D43550;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.yt .video-img .overly i:hover{
+    color: #ffffff;
+    background-color: black;
+}
+.yt .video-img .overly p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000;
+    letter-spacing: 0.12rem;
+}
+.subscribe-part{
+    width: 80%;
+    
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.subscribe-part .left-sub{
+    padding: 3rem 0rem;
+}
+.subscribe-part .left-sub p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #818181;
+    letter-spacing: 0.12rem;
+}
+.subscribe-part .left-sub h4{
+    font-family: 'Oswald', sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000;
+    letter-spacing: 0.12rem;
+}
+
+.sub-btn input{
+    padding: 2rem 2rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 30rem;
+}
+.sub-btn .btn{
+    margin-top: 0px;
+}
+
+.sub-btn .btn a:hover{
+    color: #ffffff;
+} 
+.sub-btn .btn a:after{
+    background-color: #D43550;
+}
+/* ============================
+    Third page Part ends
+===========================*/
+/* ============================
+    Service Part Starts
+===========================*/
+#service{
+    padding: 9rem 0rem;
+}
+.all-services{
+    margin-top: 5rem;
+}
+.all-services .service{
+    width: 30%;
+    padding: 5rem 7rem;
+    border: 0.2rem solid #F4F4F4;
+    position: relative;
+    transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+.all-services .service:hover{
+    transform: scale(1.03);
+    box-shadow: 0rem 0.3rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+    border: none;
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+}
+.all-services .service:hover:after{
+    
+    height: 50%;
+}
+.all-services .service:after{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 0.5rem;
+    height: 0px;
+    transition: all ease-in-out 0.4s;
+    background-color: #D43550;
+    content: '';
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+
+.all-services .service:hover:before{
+    
+    height: 50%;
+}
+.all-services .service:before{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 0.5rem;
+    height: 0px;
+    transition: all ease-in-out 0.4s;
+    background-color: #D43550;
+    content: '';
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+.all-services .service h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000;
+    letter-spacing: 0.12rem;
+    padding-top: 2rem;
+}
+.all-services .service a{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #000000;
+    letter-spacing: 0.12rem;
+    margin-top: 5rem;
+}
+.all-services .service p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #818181;
+    letter-spacing: 0.12rem;
+    padding-top: 3rem;
+    line-height: 2.8rem;
+}
+
+.all-services .service i{
+    font-size: 5rem;
+    color: #000000;
+    margin-top: 5rem;
+}
+
+/* ============================
+    Service Part ends
+===========================*/
+/* ============================
+    client Part Starts
+===========================*/
+#client{
+    padding: 9rem 0rem;
+    background-image: url(../images/pattern.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.client-left{
+    width: 40%;
+}
+.client-left .header p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #818181;
+    letter-spacing: 0.12rem;
+}
+
+.client-left .header h4{
+    font-family: 'Oswald', sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 0.12rem;
+    
+}
+.client-photos{
+    margin-top: 5rem;
+}
+.client-photos .info h4{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 0.12rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+.client-photos .info p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #818181;
+    letter-spacing: 0.12rem;
+    text-align: center;
+}
+.clients-text {
+    width: 50%;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    display: flex;
+    align-items: center;
+}
+.clients-text .texts p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    line-height: 3.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 0.12rem;
+}
+
+.clients-text .texts span{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    
+    color: #818181;
+}
+/* ============================
+    client Part ends
+===========================*/
+/* ============================
+    Showcase Part Starts
+===========================*/
+#showcase{
+    padding: 9rem 0rem;
+
+}
+.all-showcase:last-child{
+    margin-top: 3rem;
+}
+.all-showcase{
+    margin-top: 6rem;
+}
+.all-showcase .case{
+    width: 30%;
+    position: relative;
+}
+.all-showcase .case img{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+.all-showcase .case:hover .overly{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+.all-showcase .case .overly{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    opacity: 0;
+    visibility: hidden;
+    padding: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 0px;
+    background-color: rgba(212, 53, 80,0.8);
+    transition: all ease 0.4s;
+    -webkit-transition: all ease 0.4s;
+    -moz-transition: all ease 0.4s;
+    -ms-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
+}
+.all-showcase .case .overly p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 0.12rem;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    cursor: pointer;
+}
+.all-showcase .case .overly p:hover{
+    color: #000000;
+}
+.all-showcase .case .overly h4{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 0.12rem;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    cursor: pointer;
+}
+.all-showcase .case .overly h4:hover{
+    color: #000000;
+}
+/* ============================
+    Showcase Part ends
+===========================*/
+/* ============================
+    team Part Starts
+===========================*/
+#team{
+    padding: 9rem 0rem;
+}
+.team-members{
+    margin-top: 5rem;
+}
+.team-members .member-main{
+    width: 22%;
+}
+.team-members .member{
+    width: 100%;
+    position: relative;
+}
+.team-members .member:hover:after{
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+.team-members .member:after{
+    position: absolute;
+    content: '';
+    top: 0px;
+    right: 0px;
+    width: 0px;
+    opacity: 0;
+    visibility: hidden;
+    height: 100%;
+    background-color: rgba(212, 53, 80,0.7);
+    transition: all ease-out 0.4s;
+    -webkit-transition: all ease-out 0.4s;
+    -moz-transition: all ease-out 0.4s;
+    -ms-transition: all ease-out 0.4s;
+    -o-transition: all ease-out 0.4s;
+}
+.team-members .member img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+.team-members .member:hover .overly{
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+.team-members .member .overly{
+    position: absolute;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem;
+    opacity: 0;
+    transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+.team-members .member .overly .btn{
+    margin-top: 0rem;
+}
+.team-members .member .overly .btn a{
+    
+}
+.team-members .member .overly ul li{
+    padding-top: 1rem;
+}
+.team-members .member .overly ul li a{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 0.12rem;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+.team-members .member .overly ul li a:hover{
+    color: #000;
+}
+.team-members .mem-info {
+    margin-top: 2rem;
+}
+.team-members .mem-info .name{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000;
+    letter-spacing: 0.12rem;
+    transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+}
+.team-members .mem-info .name:hover{
+    color: #D43550;
+}
+.team-members .mem-info .job{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #818181;
+    letter-spacing: 0.12rem;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+/* ============================
+    team Part ends
+===========================*/
+/* ============================
+    brand Part Starts
+===========================*/
+#brands{
+    padding: 9rem 0rem;
+    background-color: #F4F4F4;
+}
+.all-brands{
+    margin-top: 6rem;
+}
+.all-brands .brand{
+    width: 23%;
+    padding: 7rem 5rem;
+    background-color: #ffffff;
+    border: 0.2rem solid #F4F4F4;
+    text-align: center;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    position: relative;
+    cursor: pointer;
+}
+.all-brands .brand:hover:after{
+    opacity: 1;
+    height: 100%;
+}
+.all-brands .brand:after{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0;
+    width: 0.5rem;
+    height: 0%;
+    background-color: #D43550;
+    content: '';
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+.all-brands .brand:hover img{
+    opacity: 1;
+}
+.all-brands .brand img{
+    opacity: 0.6;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+/* ============================
+    brand Part ends
+===========================*/
+/* ============================
+    People Part Starts
+===========================*/
+#people{
+    padding: 9rem 0rem;
+    background-image: url(../images/banner-2.jpg);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.people-texts {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.people-texts i{
+    font-size: 5rem;
+    padding: 3rem;
+    background-color: #D43550;
+    color: white;
+    
+}
+.people-texts p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 5.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 0.12rem;
+    margin-top: 2rem;
+}
+.people-texts p span{
+    color: #D43550;
+}
+
+.people-texts .people-content{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 0.12rem;
+    padding-top: 2rem;
+}
+/* ============================
+
+    People Part ends
+===========================*/
+/* ============================
+   blog Part Starts
+===========================*/
+#blog{
+    padding: 9rem 0rem;
+}
+.all-blogs{
+    margin-top: 6rem;
+}
+.blog{
+    width: 31%;
+    position: relative;
+}
+.blog .img {
+    width: 100%;
+    
+}
+.blog .img img{
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+}
+.blog .blog-text{
+    width: 90%;
+    position: absolute;
+    top: 20rem;
+    left: 50%;
+    height: 100%;
+    transform: translate(-50%);
+    background-color: #fff;
+    padding: 2rem;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+.blog .blog-text a{
+    display: inline-block;
+    padding: 1rem;
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 0.12rem;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+
+.blog .blog-text a:hover{
+    background-color: #D43550;
+}
+
+.blog .blog-text h4{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000;
+    letter-spacing: 0.12rem;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    cursor: pointer;
+    padding-top: 2rem;
+}
+.blog .blog-text h4:hover{
+    color: #D43550;
+}
+.blog .blog-text p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000;
+    letter-spacing: 0.12rem;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    cursor: pointer;
+    padding-top: 3rem;
+}
+.blog .blog-text p:hover{
+    color: #D43550;
+}
+/* ============================
+   blog Part ends
+===========================*/
+
+/* ============================
+    Map Part Starts
+===========================*/
+#map{
+    padding: 9rem 0rem;
+    margin-top: 5rem;
+}
+
+#map iframe{
+    width: 100%;
+    height: 90vh;
+}
+.map-btn{
+    width: 50%;
+}
+.map-btn-2{
+    width: 50%;
+}
+.map-btn a{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5rem 0rem;
+    color: #ffffff;
+    background-color: black;
+    letter-spacing: 0.12rem;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    
+}
+.map-btn a:hover{
+    background-color: #D43550;
+}
+.map-btn-2 a:hover{
+    background-color: #D43550;
+}
+.map-btn-2 a{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    padding: 5rem 0rem;
+    background-color: black;
+    letter-spacing: 0.12rem;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    
+}
+/* ============================
+    Map Part ends
+===========================*/
+/* ============================
+    near Part Starts
+===========================*/
+#near{
+    padding: 9rem 0rem;
+}
+.all-offices{
+    margin-top: 6rem;
+}
+.all-offices .address{
+    width: 22%;
+    position: relative;
+    padding: 4rem;
+    transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+.all-offices .address:hover{
+    box-shadow: 0rem 0.3rem 0.5rem 0.3rem rgba(0, 0, 0, 0.1);
+}
+.all-offices .address:hover:after{
+    height: 100%;
+}
+.all-offices .address::after{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 0%;
+    width: 0.4rem;
+    background-color: #D43550;
+    content: '';
+    transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+.all-offices .address h4{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000;
+    letter-spacing: 0.12rem;
+}
+
+.all-offices .address p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #818181;
+    letter-spacing: 0.12rem;
+    line-height: 2.8rem;
+    margin-top: 3rem;
+}
+/* ============================
+    near Part ends
+===========================*/
+/* ============================
+    Footer Part starts
+===========================*/
+footer{
+    padding: 9rem 0rem 4rem;
+    background: url(../images/pattern.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer-row .col{
+    width: 30%;
+    padding: 7rem;
+}
+.footer-row .col p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #aaaaaa;
+    letter-spacing: 0.12rem;
+    margin-top: 2rem;
+    line-height: 2.9rem;
+}
+.footer-row .col ul li a{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #aaaaaa;
+    letter-spacing: 0.12rem;
+    margin-top: 2rem;
+}
+.footer-row .col h4{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.footer-end{
+    border-top: 0.1rem solid #F4F4F4;
+}
+.footer-end p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #aaaaaa;
+    letter-spacing: 0.12rem;
+    margin-top: 2rem;
+    line-height: 2.9rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+/* ============================
+    Footer Part ends
+===========================*/
