@@ -17,6 +17,10 @@ a{
     max-width: 1250px;
     margin: 0px auto;
 }
+.container-2{
+    max-width: 1100px;
+    margin: 0 auto ;
+}
 html{
     font-size: 62.5%;
 }
@@ -77,6 +81,18 @@ header{
     margin-right: 0px;
     align-items: center;
     
+}
+.right .login a{
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    background-color: #1da81d;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
 }
 .right .user-profile{
     text-align: center;
@@ -600,16 +616,593 @@ header{
     Main Content Part ends
 ===========================*/
 /* ============================
-    Part Starts
+    Profile Part Starts
+===========================*/
+#profile-page{
+    padding: 0rem 0rem 7rem;
+    background-color: #efefef;
+}
+
+.cover-page .cover-photo{
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+    border-bottom-right-radius:2rem;
+    border-bottom-left-radius: 2rem;
+}
+.cover-page .cover-photo .overly{
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+}
+.cover-page .cover-photo .overly a i{
+    padding-right: 1rem;
+}
+.cover-page .cover-photo .overly a{
+    font-size: 1.6rem;
+    color: #000;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.cover-page .cover-photo img{
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    border-bottom-right-radius:2rem;
+    border-bottom-left-radius: 2rem;
+}
+.cover-page .dp-images {
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    bottom: 7rem;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+.cover-page .dp-images img{
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 0.4rem solid #1876f2;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.cover-page .all-nav{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2rem;
+
+}
+.cover-page .all-nav nav ul li a{
+    font-size: 1.6rem;
+    color: rgb(121, 118, 118);
+    margin-left: 2rem;
+    padding: 1.5rem 0rem;
+    display: inline-block;
+    position: relative;
+}
+.cover-page .all-nav nav ul li a:hover::after{
+    opacity: 1;
+    visibility: visible;
+}
+.cover-page .all-nav nav ul li a:after{
+    position: absolute;
+    bottom:0rem;
+    left: 0px;
+    width: 100%;
+    height: 0.2rem;
+    content: '';
+    opacity: 0;
+    visibility: hidden;
+    background-color: #1876f2;
+}
+.cover-page .all-nav nav ul li a:hover{
+    color: #1876f2;
+
+}
+.cover-page .all-nav .story-btn{
+    margin-right: 2rem;
+}
+.cover-page .all-nav .story-btn a i{
+    padding-right: 0.5rem;
+}
+.cover-page .all-nav .story-btn a{
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.3rem;
+    background-color: #1876f2;
+    display: inline-block;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+.cover-page .all-nav .dots a{
+    color: #000;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    background-color: #D8DADF;
+    border-radius: 0.5rem;
+    display: inline-block;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+.cover-page .info{
+    width: 80%;
+    margin: 0 auto;
+    margin-top:4rem;
+    padding-bottom: 2rem;
+    border-bottom: 0.1rem solid #626262;
+}
+.cover-page .info a{
+    font-size: 1.4rem;
+    color: #1a9df5;
+}
+.cover-page .info .edit{
+    padding-top: 2rem;
+    
+}
+.cover-page .info a:hover{
+    text-decoration: underline;
+}
+.cover-page .info h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.cover-page .info h2 span{
+    font-weight: 300;
+}
+
+
+.profile-posts{
+    width:80%;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+.profile-posts .intro-icons{
+    margin-top: 2rem;
+    display: flex;
+    padding: 2rem;
+    align-items: flex-start;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+}
+.profile-posts .intro-icons ul li{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+.profile-posts .intro-icons ul li a{
+    font-size: 1.4rem;
+    color: #000;
+}
+.profile-posts .intro-section .button-2{
+    width: 100%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    margin-top: 2rem;
+    -o-border-radius: 0.5rem;
+}
+.profile-posts .intro-section .button-2 a{
+    font-size: 1.6rem;
+    
+    width: 100%;
+    background-color: #D8DADF;
+    box-shadow: 0rem 0rem 0.1rem 0.2rem rgba(0,0,0,0.1);
+    color:#000 ;
+    text-align: center;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+.profile-posts .intro-icons a i{
+    font-size: 2rem;
+    padding-right: 0.5rem;
+}
+.profile-posts .intro-section h2{
+    font-size: 2rem;
+}
+.profile-posts .intro-section{
+    width: 40%;
+    position: sticky;
+    z-index: 99;
+    top: 0px;
+    height: 100%;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.profile-posts .photos-section{
+    margin-top: 2rem;
+    padding: 2rem;
+    
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;Login
+}
+.profile-posts .photos-section .photo-album {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+.profile-posts .photos-section .photo-album img{
+    width: 32%;
+    height: 10rem;
+    object-fit: cover;
+    margin-top: 1rem;
+}
+
+.profile-posts .friends-section{
+    padding: 2rem;
+    margin-top: 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.profile-posts .friends-section #all{
+    color: #1876f2;
+    
+    display: inline-block;
+    font-size: 1.6rem;
+}
+.profile-posts .friends-section .friends-photo{
+    width: 100%;
+    flex-wrap: wrap;
+}
+.profile-posts .friends-section .friends-photo .friend{
+    width: 30%;
+}
+.profile-posts .friends-section .friends-photo .friend p{
+    font-size: 1.3rem;
+    color: #000;
+    font-weight: 400;
+    padding-top: 0.5rem;
+}
+.profile-posts .friends-section .friends-photo img{
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    box-shadow: 0rem 0rem 0.1rem 0.2rem rgba(0,0,0,0.2);
+}
+
+.profile-posts .main-section{
+    width: 58%;
+    margin-top: 2rem;
+}
+
+.profile-posts .main-section .post-box{
+    width: 100%;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 0.1rem 0.2rem rgba(0,0,0,0.1);
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.profile-posts .main-section .post-box .left-post img{
+    width: 5rem;
+    height: 5rem;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    -webkit-border-radius: 50%;
+}
+.profile-posts .main-section .post-box .right-post{
+    margin-left: 1rem;
+    width: 100%;
+}
+.profile-posts .main-section .post-box .right-post h4{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #626262;
+}
+.profile-posts .main-section .post-box .right-post select{
+    outline: none;
+    border: 0;
+    font-size: 1.2rem;
+    color: #626262;
+}  
+.profile-posts .main-section .post-box .right-post input{
+    width: 100%;
+    font-size: 1.4rem;
+    color: #626262;
+    border: 0;
+    outline: none;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    background-color: #D8DADF;
+    margin-top: 1rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+.profile-posts .main-section .post-box .right-post .icons .one:nth-child(1){
+    margin-left: 0rem;
+}
+.profile-posts .main-section .post-box .right-post .icons .one{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+.profile-posts .main-section .post-box .right-post .icons .one p{
+    font-size: 1.3rem;
+    color: #626262;
+    padding-left: 1rem;
+}
+.profile-posts .main-section .post-box .right-post .icons .one img{
+    width: 2rem;
+    object-fit: cover;
+}
+
+
+.profile-posts .main-section .update .update-one{
+    width: 100%;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 1.5rem;
+    box-shadow: 0rem 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+}
+.profile-posts .main-section .update .update-one .main-update{
+    width: 100%;
+}
+.profile-posts .main-section .update .update-one .main-update .react-row{
+    margin-top: 1rem;
+}
+.profile-posts .main-section .update .update-one .main-update .react-row .react img{
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    cursor: pointer;
+}
+.profile-posts .main-section .update .update-one .main-update img{
+    width: 100%;
+}
+.profile-posts .main-section .update .update-one .main-update p{
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    padding: 1rem;
+
+}
+.profile-posts .main-section .update .update-one .header i{
+    font-size: 2rem;
+}
+.profile-posts .main-section .update .update-one .header .head-2{
+    padding-left: 2rem;
+}
+.profile-posts .main-section .load-btn {
+    margin-top: 3rem;
+    text-align: center;
+}
+.profile-posts .main-section .load-btn a{
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: #626262;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+    border: 0.2rem solid #626262;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.profile-posts .main-section .update .update-one .header .head img{
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.profile-posts .main-section .update .update-one .header .head  h4{
+    font-size: 1.7rem;
+    color: #000;
+    font-weight: 400;
+}
+/* ============================
+    Profile Part ends
 ===========================*/
 /* ============================
-    Part ends
+    LoginPart Starts
 ===========================*/
+#login{
+    background-color: #D8DADF;
+    padding: 10rem 0rem;
+}
+.login-cont{
+    display: flex;
+    align-items: center;
+}
+.login-left{
+    width: 50%;
+}
+.login-left h1{
+    font-size: 5rem;
+    color: #1876f2;
+}
+.login-left p{
+    font-size: 2rem;
+    
+}
+.login-left .accounts-row{
+    margin-top: 3rem;
+}
+.login-left .accounts-row .account:last-child{
+    margin-left: 2rem;
+}
+.login-left .accounts-row .account{
+    width: 30%;
+    background-color: #fff;
+    transition: all ease-in-out 0.3s;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+.login-left .accounts-row .account:hover{
+    box-shadow: 0rem 0.2rem 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
+}
+.login-left .accounts-row .account .account-info a{
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 1rem;
+    text-align: center;
+    color: #000;
+}
+.login-left .accounts-row .account .image{
+    width: 100%;
+    height: 20rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.login-left .accounts-row .account .image-2{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 20rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.login-left .accounts-row .account .image img{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+
+.login-right{
+    width: 50%;
+   
+}
+.login-right .form{
+    width: 70%;
+    margin: 0 auto;
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.3rem 0.5rem 0.4rem rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.login-right .form input{
+    outline: none;
+    border: 0.1rem solid #626262;
+    padding: 2rem 1rem;
+    width: 100%;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+.login-right .form #log-in{
+    padding: 1rem 0rem;
+    width: 100%;
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 2rem;
+    background-color: #1876f2;
+    text-align: center;
+    border-radius:1rem  ;
+    -webkit-border-radius:1rem  ;
+    -moz-border-radius:1rem  ;
+    -ms-border-radius:1rem  ;
+    -o-border-radius:1rem  ;
+}
+.login-right .form #new{
+    padding: 1rem 0rem;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 2rem;
+    background-color: #36A420;
+    text-align: center;
+    border-radius:1rem  ;
+    -webkit-border-radius:1rem  ;
+    -moz-border-radius:1rem  ;
+    -ms-border-radius:1rem  ;
+    -o-border-radius:1rem  ;
+}
+.login-right .form #else{
+    width: 100%;
+    font-size: 2rem;
+    color: #1876f2;
+    margin-top: 2rem;
+    text-align: center;
+}
+.login-right .form #else-2{
+    width: 100%;
+    font-size: 1.2rem;
+    color: #1876f2;
+    margin-top: 2rem;
+    text-align: center;
+}
 /* ============================
-    Part Starts
-===========================*/
-/* ============================
-    Part ends
+    LoginPart ends
 ===========================*/
 /* ============================
     Part Starts
