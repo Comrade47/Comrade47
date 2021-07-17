@@ -1,0 +1,729 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+    float: left;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+:root{
+    --header-bg:#F7F8FA;
+    --main-color:#C53030;
+}
+.container{
+    max-width: 1250px;
+    margin: 0px auto;
+}
+html{
+    font-size: 62.5%;
+}
+img{
+    vertical-align: middle;
+}
+.clr{
+    clear: both;
+}
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+:root{
+    --hover:#00e0d0;
+}
+.align-center{
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+body{
+ background-color: var(--header-bg);;
+}
+/* ============================
+    Banner Part Starts
+===========================*/
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+header .header-top{
+    padding: 1rem;
+    background-color: var(--header-bg);
+}
+header .header-top .info:nth-child(1){
+    margin-left: 0px;
+}
+header .header-top .info{
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+} 
+header .header-top .info i{
+    font-size: 2rem;
+    color: var(--main-color);
+    
+}
+header .header-top .info a{
+    font-size: 1.5rem;
+    color: #333e4f;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    padding-left: 0.5rem;
+}
+header .header-top .info #phone{
+    transform: rotate(-35deg);
+    -webkit-transform: rotate(-35deg);
+    -moz-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    -o-transform: rotate(-35deg);
+}
+header .header-center{
+    padding: 2rem 0rem;
+    background-color: #fff;
+}
+header .header-center .logo img{
+    width: 10rem;
+}
+header .header-center .src-icon{
+    box-sizing: border-box;
+}
+header .header-center .src-icon input{
+    padding: 1rem;
+    width: 70rem;
+    outline: 0;
+    border: none;
+    background-color: transparent;
+    border: 0.2rem solid var(--main-color);
+   
+    
+}
+header .header-center .src-icon i{
+    font-size: 2.5rem;
+    color: white;
+    padding: 0.75rem 5rem;
+    display: inline-block;
+    background-color: var(--main-color);
+    
+}
+header .header-center .center-icon .main-icon{
+    font-size: 1.5rem;
+    color: #000000;
+    padding: 1rem;
+    text-align: center;
+    margin-left: 2rem;
+    border-radius: 50%;
+    transition: all linear 0.4s;
+    box-shadow: 0 0 0.2rem 0.1rem rgba(0,0,0,0.4);
+    position: relative;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+header .header-center .center-icons a:hover .chat-box{
+    opacity: 1;
+    visibility: visible;
+}
+
+header .header-center .center-icons a .chat-box{
+    position: absolute;
+    top: 5rem;
+    z-index: 999;
+    background-color: #fff;
+    right: 5rem;
+    width: 30rem;
+    transition: all linear 0.4s;
+    box-shadow: 0 0.2rem 0.3rem 0.2rem rgba(0,0,0,0.4);
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+header .header-center .center-icons a .chat-box .chat-head{
+    width: 100%;
+    background-color: #EDF2F7;
+    padding-left: 1rem;
+}
+header .header-center .center-icons a .chat-box .chat-head h3{
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+header .header-center .center-icons a:hover .log-in-box{
+    opacity: 1;
+    visibility: visible;
+}
+header .header-center .center-icons a .log-in-box{
+    position: absolute;
+    top: 5rem;
+    z-index: 999;
+    background-color: #fff;
+    right: 5rem;
+    width: 25rem;
+    transition: all linear 0.4s;
+    box-shadow: 0 0.2rem 0.3rem 0.2rem rgba(0,0,0,0.4);
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+header .header-center .center-icons a .log-in-box .login-head{
+    width: 100%;
+    background-color: #EDF2F7;
+    padding-left: 1rem;
+}
+header .header-center .center-icons a .log-in-box .login-head h3{
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+header .header-center .center-icons a .log-in-box form {
+    padding: 2rem;
+    font-size: 1.6rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    color: #414141;
+}
+header .header-center .center-icons a .log-in-box input{
+    width:100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+header .header-center .center-icons a .log-in-box #login{
+    background-color: var(--main-color);
+    outline: none;
+    border: 0;
+    font-size: 1.8rem;
+    color: #ffffff;
+    padding: 1rem;
+    margin-bottom: 0rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+header .header-center .center-icons a .log-in-box p{
+    font-size: 1.2rem;
+    color: #333e4f;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    margin-top: 0rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+header .header-center .center-icons a .log-in-box p a{
+    color:var(--main-color)
+}
+header .nav-part .nav-cont{
+    display: flex;
+    align-items: center;
+}
+header .nav-part{
+    background-color: #1A202C;
+    
+}
+header .nav-part .main-item{
+    width: 20%;
+    position: relative;
+}
+header .nav-part .main-item #main-item{
+    font-size: 2rem;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    padding: 1rem;
+    position: relative;
+    text-align: center;
+    background-color: var(--main-color);
+}
+
+header .nav-part .main-item #main-item i{
+    position: absolute;
+    left: 2rem;
+    top: 1rem;
+}
+header .nav-part .nav-list{
+    width: 75%;
+}
+header .nav-part .nav-list nav ul li a{
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    padding: 1rem 0rem ;
+    display: inline-block;
+    margin-left: 4rem;
+}
+header .nav-part .nav-list nav ul li a:hover{
+    text-decoration: underline;
+}
+
+/* ============================
+    header Part ends
+===========================*/
+/* ============================
+    banner Part Starts
+===========================*/
+#banner{
+    background-color: #F7F8FA;
+}
+.banner-cont{
+    display: flex;
+    
+}
+.banner-left{
+    width: 20%;
+    height: max-content;
+    box-shadow: 0 0.1rem 0.2rem 0.2rem rgba(0,0,0,0.3);
+}
+.banner-left ul{
+    width: 100%;
+    
+}
+.banner-left ul li a{
+    font-size: 1.4rem;
+    color: #1A202C;
+    font-family: 'Raleway', sans-serif;
+    display: block;
+    font-weight: 400;
+    padding-top:1.8rem;
+    padding-bottom: 1.8rem;
+    position: relative;
+    padding-left: 1rem;
+    border-bottom: 0.1rem solid #888a8d;
+}
+.banner-left ul li a:hover{
+    background-color: rgb(224, 238, 250);
+}
+.banner-left ul li a i{
+    position: absolute;
+    right: 2rem;
+}
+.banner-right{
+    width: 80%;
+    padding: 1.5rem;
+}
+.banner-right .banner-img{
+    width: 100%;
+}
+.banner-right .banner-img-2 {
+    margin-top: 1rem;
+}
+.banner-right .banner-img-2 img{
+    width: 50%;
+}
+.banner-right .banner-img img{
+    width: 100%;
+}
+/* ============================
+    banner Part ends
+===========================*/
+
+/* ============================
+    Express Part Starts
+===========================*/
+#express{
+    padding: 7rem 0rem;
+    background-color: var(--header-bg);
+}
+.express-2{
+    margin-top: 5rem;
+}
+.express-header h3{
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    color: #333e4f;
+    font-weight: 700;
+}
+.express-header a{
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    color: #333e4f;
+    font-weight: 700;
+}
+.all-expresses {
+    margin-top: 2rem;
+}
+.all-expresses .express-img{
+    width: 15%;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.1rem 0.2rem 0.1rem rgba(0,0,0,0.2);
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+.all-expresses .express-img img{
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+/* ============================
+    Express Part ends
+===========================*/
+/* ============================
+    brands Part Starts
+===========================*/
+/* ============================
+    brands Part ends
+===========================*/
+#brands{
+    
+}
+.all-brands{
+    margin-top: 3rem;
+}
+.all-brands .brand{
+    width: 15%;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    background-color: #fff;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.all-brands .brand img{
+    width: 100%;
+    padding: 2rem;
+    max-width: 100%;
+    height: 70%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.all-brands .brand a{
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    color: #1A202C;
+    font-weight: 700;
+    padding: 3rem;
+    text-align: center;
+}
+/* ============================
+    footer Part Starts
+===========================*/
+footer{
+    padding: 5rem 0rem;
+    background-color: #333E4F;
+    margin-top: 4rem;
+}
+.footer-row .footer-col{
+    width: 25%;
+}
+.footer-row .footer-col h4{
+    font-size: 1.8rem;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+.footer-row .footer-col img{
+    width: 15rem;
+    margin-top: 1rem;
+}
+.footer-row .footer-col ul li{
+    padding-top: 1.3rem;
+}
+.footer-row .footer-col ul li a{
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.footer-row .footer-col ul li a .fa-facebook-square{
+    font-size: 3rem;
+    margin-left: 0px;
+}
+.footer-row .footer-col ul li a i{
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+/* ============================
+    footer Part ends
+===========================*/
+/* ============================
+    bikepage Part Starts
+===========================*/
+
+.bike-header{
+    margin-top: 2rem;
+}
+.bike-header .btn a:nth-child(1){
+    margin-left: 0rem;
+}
+.bike-header .btn a{
+    font-size: 1.8rem;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    display: inline-block;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-left: 2rem;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+.bike-header .btn a:hover{
+    background-color: var(--main-color);
+    color: #fff;
+
+}
+.bike-brands{
+    margin-top: 3rem;
+}
+.bike-brands .bike-brand:nth-child(1){
+    margin-left: 0rem;
+}
+.bike-brands .bike-brand{
+    width: 15%;
+    background-color: #fff;
+    margin-left: 3rem;
+    box-shadow: 0 0.1rem 0.2rem 0.1rem rgba(0,0,0,0.2) ;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.bike-brands .bike-brand img{
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    padding: 3rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.bike-brands .bike-brand a{
+    font-size: 1.8rem;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    padding: 0rem 0rem 2rem;
+}
+/* ============================
+    bikepage Part ends
+===========================*/
+/* ============================
+    bike Part Starts
+===========================*/
+#bike{
+    padding: 5rem;
+}
+.all-products {
+    margin-top: 3rem;
+}
+.all-products .product{
+    width: 15%;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    box-shadow: 0rem 0.1rem 0.2rem 0.1rem rgba(0,0,0,0.2);
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.all-products .product img:hover{
+    transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    -o-transform: scale(1.08);
+}
+.all-products .product img{
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+.all-products .product a{
+    font-size: 1.4rem;
+    color: #000;    
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    padding-top: 2rem;
+}
+.all-products .product h5{
+    font-size: 1.7rem;
+    color: #000;    
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    padding: 0rem 0rem;
+}
+.all-products .product p{
+    font-size: 1.5rem;
+    color: rgb(206, 206, 206);    
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    padding: 0.5rem 0rem 0rem;
+}
+/* ============================
+    bike Part ends
+===========================*/
+/* ============================
+    form Part Starts
+===========================*/
+#form{
+    background-color: var(--header-bg);
+}
+.form-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+}
+.form{
+    width: 70%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 3rem 2rem;
+}
+
+.form-header h3{
+    font-size: 1.8rem;
+    color: #000;    
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+.form-header h5{
+    font-size: 1.5rem;
+    color: #000;    
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+.form-header h5 a{
+    font-size: 1.5rem;
+    color: rgb(63, 199, 223);    
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+.main-form{
+    margin-top: 4rem;
+}
+.main-form .left-form{
+    width: 45%;
+    
+}
+.main-form .left-form label{
+    font-size: 1.5rem;
+    color: rgb(184, 181, 181);    
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    
+}
+.main-form .left-form input{
+    margin-top: 1rem;
+    
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: rgb(184, 181, 181);
+    outline: none;
+    border: 0;
+    border: 0.05rem solid rgb(184, 181, 181) ;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+.main-form .left-form form select{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    outline: none;
+    border: 0;
+    padding: 1rem 1rem;
+    background-color: #fff;
+    border: 0.1rem solid rgb(184, 181, 181);
+    font-size: 1.5rem;
+    color: #000;    
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+.main-form .left-form a{
+    font-size: 1.8rem;
+    outline: none;
+    border: 0;
+    width: 100%;
+    color: #fff;   
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-top: 3rem;
+    padding: 1rem 3rem;
+    background-color: var(--main-color);
+    text-align: center;
+}
+/* ============================
+    form Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
