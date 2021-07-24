@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+    float: left;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+.container{
+    max-width: 1125px;
+    margin: 0px auto;
+}
+html{
+    font-size: 62.5%;
+}
+img{
+    vertical-align: middle;
+}
+.clr{
+    clear: both;
+}
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+:root{
+    --hover:#00e0d0;
+}
+.align-center{
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+
+/* ============================
+    header Part Starts
+===========================*/
+header{
+    background-color: #000;
+}
+header .header-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem ;
+}
+header nav ul li a{
+    font-size:1.3rem;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    display: inline-block;
+    margin: 0rem 1.5rem;
+}
+/* ============================
+    header Part ends
+===========================*/
+/* ============================
+    banner Part Starts
+===========================*/
+#banner{
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10rem 0rem 14rem;
+}
+.banner-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-texts{
+    width: 50%;
+}
+.banner-texts .banner-contents .line-1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.8rem;
+    color: #ffffff;
+    font-weight: 400;
+    margin-top: 3rem;
+    position: relative;
+}
+.banner-texts .banner-contents .line-1:after{
+    position: absolute;
+    content: '';
+    bottom: -2rem;
+    left: 0px;
+    width: 6.5rem;
+    height: 0.3rem;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+.banner-texts .banner-contents .line-2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3rem;
+    color: #ffffff;
+    font-weight: 300;
+    line-height: 2.6rem;
+    margin-top: 3rem;
+}
+.banner-texts .banner-contents a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.3rem;
+    color: #ffffff;
+    font-weight: 600;
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    position: relative;
+    z-index: 1;
+    border: 0.2rem solid #ffffff;
+    background-color: transparent;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+.banner-texts .banner-contents a:hover:after{
+    width: 100%;
+    color: white;
+}
+.banner-texts .banner-contents a:after{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 0.5rem;
+    content: '';
+    z-index: -1;
+    background-color: #ff8b38;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+.banner-form{
+    width: 36rem;
+    margin-right: 5rem;
+}
+.banner-form h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    background-color: #f5f5f5;
+    padding: 1rem ;
+    text-align: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.banner-form h3 span{
+    color: #ff8b38;
+}
+.banner-form form {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 3rem;
+}
+.banner-form form input:nth-child(1){
+    margin-top: 0rem;
+}
+.banner-form form input{
+    border: none;
+    outline: 0;
+    display: block;
+    padding: 1rem;
+    border-bottom: 0.2rem solid #d6d6d6;
+    font-family: 'Open Sans', sans-serif;
+    color: #bdbdbd;
+    font-size: 1.6rem;
+    font-weight: 400;
+    width: 100%;
+    margin-top: 2rem;
+}
+.banner-form button{
+    width: 100%;
+    display: block;
+    background-color: #ff9b51;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.8rem;
+    padding: 1.5rem;
+    outline: 0;
+    border: none;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+/* ============================
+    banner Part ends
+===========================*/
+
+/* ============================
+    Social Media Part Starts
+===========================*/
+#social-media{
+    box-shadow: 0 0 0.3rem 0.3rem rgba(0,0,0,0.4);
+}
+.social-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0rem;
+}
+.social-left{
+    width: 30%;
+}
+.social-left h3{
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+.social-left p{
+    color: #86878b;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.social-links ul li a{
+    font-size: 5rem;
+    margin-left: 5rem;
+    color: #86878b;
+
+}
+/* ============================
+    Social MEdia Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+#tab{
+    padding: 10rem;
+    margin-top: 1rem;
+    background-color: #f5f5f5;
+}
+.tab-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tab-contents{
+    width: 60%;
+    
+}
+.tab-img{
+    width: 20%;
+}
+.tab-img img{
+    width: 100%;
+    max-width: 100%sub-list ;
+}
+.tab-btns{
+    width: 20%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    
+}
+.tab-btns a:nth-child(1){
+    border-top-right-radius: 0.7rem;
+    border-top-left-radius: 0.7rem;
+}
+.tab-btns a:last-child{
+    border-bottom-left-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+}
+.tab-btns a{
+    display: inline-block;
+    padding: 5rem 4rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.7rem;
+    color: white;
+    font-weight: 700;
+    margin-top: 0.2rem;
+    text-transform: uppercase;
+    transition: all linear 0.4s;
+    background-color: #333333;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+.tab-btns a:hover{
+    background-color: #ff8b38;
+}
+.tab-contents h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.tab-contents p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #86878b;
+    line-height: 2.4rem;
+    margin-top: 5rem;
+}
+.tab-contents p span{
+    display: block;
+    padding-top: 3rem;
+}
+.tab-contents a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    display: inline-block;
+    background-color: #ff8b38;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    sub-list Part Starts
+===========================*/
+#sub-list{
+    padding: 10rem 0rem;
+}
+.sub-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sub-right h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #212121;
+    position: relative;
+    margin-bottom: 4rem;
+}
+.sub-right h3::after{
+    position: absolute;
+    content: '';
+    bottom: -2rem;
+    left: 0px;
+    width: 6.5rem;
+    height: 0.4rem;
+    background-color: #ff8b38;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.sub-right{
+    width: 40%;
+}
+.sub-right p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #86878b;
+}
+
+.sub-right .sub-list{
+    margin-top: 3rem;
+}
+.sub-right .sub-list .list{
+    margin-top: 2.5rem;
+}
+.sub-right .sub-list .list .sub-icon a{
+    font-size: 2rem;
+    color: #ff9b51;
+    padding: 1rem;
+    border-radius: 50%;
+    border: 0.2rem solid #ff8b38;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.sub-right .sub-list .list .sub-texts{
+    padding-left: 2rem;
+}
+.sub-right .sub-list .list .sub-texts h4{
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+}
+/* ============================
+    sub-list Part ends
+===========================*/
+.error-msg{
+    font-size: 1.7rem;
+    color: #5f0b0b;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/

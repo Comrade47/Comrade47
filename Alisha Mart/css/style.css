@@ -1,0 +1,954 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+    float: left;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+.container{
+    max-width: 1170px;
+    margin: 0px auto;
+}
+html{
+    font-size: 62.5%;
+}
+img{
+    vertical-align: middle;
+}
+.clr{
+    clear: both;
+}
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+:root{
+    --hover:#00e0d0;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.align-center{
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+body{
+    background-color: #F6F7F9;
+    position: relative;
+}
+/* ============================
+    header Part Starts
+===========================*/
+header{
+    z-index: 9999;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    
+    font-family: 'Abel', sans-serif;
+    box-shadow: 0 0.2rem 0.3rem 0.2rem rgba(0,0,0,0.6);
+}
+.header-top{
+    padding: 1.5rem;
+    border-bottom: 0.1rem solid #ea6721;
+}
+.header-top-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-top .support-btn a{
+    color:#ea6721;
+    font-size:1.7rem;
+    position: relative;
+    padding-left: 2.5rem;
+    display: inline-block;
+}
+.header-top .support-btn a i{
+    font-size: 2rem;
+    position: absolute;
+    left: 0rem;
+}
+.header-top nav ul li a{
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-left: 4rem;
+    color: black;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.header-top nav ul li a:hover{
+    color: #ea6721;
+}
+/* header middle styling */
+.header-middle{
+    border-bottom: 0.2rem solid #f6f7f9;
+}
+.header-logo{
+    width: 7%;
+    padding: 1rem;
+    
+}
+.header-middle-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.header-logo img{
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.header-logo a i{
+    
+    display: inline-block;
+    font-size: 3.5rem;
+    color: #ea6721;
+    padding: 1.5rem;
+}
+.srch-btn{
+
+   background-color: #f6f7f9;
+    width: 80%;
+   
+}
+.srch-btn input{
+    outline: 0;
+    border:0.1rem solid #e2e2e2;
+    background-color: transparent;
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    padding: 1.3rem;
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+}
+.srch-btn a{
+    font-size: 3rem;
+    color:white;
+    padding: 1rem;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    background-color: #ea6721;
+}
+/* header-nav styling */
+.header-nav-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+.main-nav{
+    width: 30%;
+    display: flex;
+    align-items: center;
+   
+}
+.main-nav a{
+    font-size: 2.5rem;
+    color: #ea6721;
+    position: relative;
+}
+
+.item-menu{
+   position: absolute;
+   z-index: 9999;
+   background-color: rgba(0,0,0,0.6);
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 100vh;
+   
+}
+
+.item-menu .item-nav{
+    width: 15%;
+    height: 100%;
+}
+.item-menu .item-nav #cross-3{
+    position: absolute;
+    right: 3rem;
+    top: 1rem;
+}
+.item-menu .item-nav ul{
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    padding: 3rem 0rem;
+    position: relative;
+}
+.item-menu .item-nav ul:after{
+    position: absolute;
+    bottom: 0px;
+    content: '';
+    left: 0px;
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(36, 165, 122);
+}
+.item-menu .item-nav ul:before{
+    position: absolute;
+    top: 0px;
+    content: '';
+    left: 0px;
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(36, 165, 122);
+}
+.item-menu .item-nav ul li{
+    padding: 1rem 0rem;
+    width: 100%;
+}
+.item-menu .item-nav ul li a{
+    font-size: 1.5rem;
+    color: #ea6721;
+    display: block;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 0.1rem solid #ea6721;
+}
+.menu{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu ul li a{
+    margin-left: 3rem;
+    color: black;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+.menu ul li a:hover{
+    color: #ea6721;
+}
+
+/* sign-in-page */
+.login-page{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0,0.6);
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.login-page-2{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.6);
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+
+.login-page-2 .sign-in{
+    width: 50%;
+    position: relative;
+    padding: 2rem;
+    
+    background-color: #fff;
+    transition: all ease-in-out 0.3s;
+    z-index: 9999;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+.login-page-2 .sign-in .header .header-text h3{
+    
+    text-align: center;
+}
+.login-page-2 .sign-in .header .header-text a{
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+    font-size: 3rem;
+}
+
+.login-page-2 .sign-in .header h3{
+    text-transform: uppercase;
+    color: #000;
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.login-page-2 .sign-in .header a{
+    font-size: 1.7rem;
+    color: #ea6721;
+    display: inline-block;
+    letter-spacing: 0px;
+    margin-left: 0rem;
+}
+.login-page-2 .sign-in .header a:hover{
+    color: black;
+}
+.login-page-2 .sign-in .form{
+    width: 50%;
+    margin-top: 2rem;
+    border-right: 0.2rem solid #666666;
+    
+}
+.login-page-2 .sign-in .form form {
+    width: 90%;
+}
+.login-page-2 .sign-in .form form input{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    outline: 0;
+    border: none;
+    border:0.1rem solid  #666666;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+}
+.login-page-2 .sign-in .form form label{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color:#666666
+}
+.login-page-2 .sign-in .form form a{
+    color: #ea6721;
+    text-align: right;
+    font-size: 1.3rem;
+    letter-spacing: 0px;
+}
+.login-page-2 .sign-in .form form button{
+    display: block;
+    padding: 1rem;
+    margin-top: 2rem;
+    color: white;
+    background-color: #ea6721;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: all linear 0.3s;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.login-page-2 .sign-in .form form button:hover{
+    background-color: #000;
+}
+.login-page-2 .sign-in .sign-in-btns{
+    width: 40%;
+    margin-top: 3rem;
+}
+.login-page-2 .sign-in .sign-in-btns a{
+    display: block;
+    width: 100%;
+    padding: 2rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-align: center;
+    position: relative;
+    margin-top: 1rem;
+    color: white;
+}
+.login-page-2 .sign-in .sign-in-main{
+    display: flex;
+    
+}
+.login-page-2 .sign-in .sign-in-btns a i{
+    position: absolute;
+    left: 2.7rem;
+    top: 1.3rem;
+    font-size: 2.5rem;
+    color: white;
+}
+.login-page-2 .sign-in .sign-in-btns .mobile{
+    background-color: rgb(39, 219, 174);
+}
+.login-page-2 .sign-in .sign-in-btns .google{
+    background-color: rgb(167, 31, 13);
+}
+.login-page-2 .sign-in .sign-in-btns .facebook{
+    background-color: rgb(40, 104, 146);
+}
+
+
+
+
+
+
+
+.login-page .sign-in{
+    width: 50%;
+    position: relative;
+    padding: 2rem;
+    
+    background-color: #fff;
+    transition: all ease-in-out 0.3s;
+    z-index: 9999;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+.login-page .sign-in .header .header-text h3{
+    
+    text-align: center;
+}
+.login-page .sign-in .header .header-text a{
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+    font-size: 3rem;
+}
+
+.login-page .sign-in .header h3{
+    text-transform: uppercase;
+    color: #000;
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.login-page .sign-in .header a{
+    font-size: 1.7rem;
+    color: #ea6721;
+    display: inline-block;
+    letter-spacing: 0px;
+    margin-left: 0rem;
+}
+.login-page .sign-in .header a:hover{
+    color: black;
+}
+.login-page .sign-in .form{
+    width: 50%;
+    margin-top: 2rem;
+    border-right: 0.2rem solid #666666;
+    
+}
+.login-page .sign-in .form form {
+    width: 90%;
+}
+.login-page .sign-in .form form input{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    outline: 0;
+    border: none;
+    border:0.1rem solid  #666666;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+}
+.login-page .sign-in .form form label{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color:#666666
+}
+.login-page .sign-in .form form a{
+    color: #ea6721;
+    text-align: right;
+    font-size: 1.3rem;
+    letter-spacing: 0px;
+}
+.login-page .sign-in .form form button{
+    display: block;
+    padding: 1rem;
+    margin-top: 2rem;
+    color: white;
+    background-color: #ea6721;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: all linear 0.3s;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.login-page .sign-in .form form button:hover{
+    background-color: #000;
+}
+.login-page .sign-in .sign-in-btns{
+    width: 40%;
+    margin-top: 3rem;
+}
+.login-page .sign-in .sign-in-btns a{
+    display: block;
+    width: 100%;
+    padding: 2rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-align: center;
+    position: relative;
+    margin-top: 1rem;
+    color: white;
+}
+.login-page .sign-in .sign-in-main{
+    display: flex;
+    
+}
+.login-page .sign-in .sign-in-btns a i{
+    position: absolute;
+    left: 2.7rem;
+    top: 1.3rem;
+    font-size: 2.5rem;
+    color: white;
+}
+.login-page .sign-in .sign-in-btns .mobile{
+    background-color: rgb(39, 219, 174);
+}
+.login-page .sign-in .sign-in-btns .google{
+    background-color: rgb(167, 31, 13);
+}
+.login-page .sign-in .sign-in-btns .facebook{
+    background-color: rgb(40, 104, 146);
+}
+/* ============================
+    header Part ends
+===========================*/
+/* ============================
+    banner Part Starts
+===========================*/
+#banner{
+    background-image: url(../images/banner.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding:17rem 0rem
+}
+
+/* ============================
+    banner Part ends
+===========================*/
+
+/* ============================
+    stuff Part Starts
+===========================*/
+.stuff-card{
+    width: 32%;
+    padding: 2rem 5rem;
+    background-color: #fff;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    cursor: pointer;
+    transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+.stuff-card:hover{
+    box-shadow: 0 0 0.2rem 0.2rem rgba(0,0,0,0.2);
+}
+.stuff-cont{
+    display: flex;
+    justify-content: space-between;
+}
+.stuff-card .img img{
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+.stuff-card .btn{
+    margin-top: 2rem;
+}
+
+.stuff-card .btn a{
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1rem 0rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    background-color: #5debd9;
+    color: white;
+}
+/* ============================
+    stuff Part ends
+===========================*/
+/* ============================
+    product Part Starts
+===========================*/
+#product{
+    background-color: #F6F7F9;
+}
+.common-header h3{
+    font-size: 2rem;
+    color: #ea6721;
+    text-transform: uppercase;
+    padding: 1rem 0rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    border-bottom: 0.1rem solid #e2e2e2;
+}
+.all-products {
+    background-color: #fff;
+    cursor: pointer;
+    margin-top: 2rem;
+    
+}
+.all-products .product:hover{
+    box-shadow: 0 0.1rem 0.2rem 0.2rem rgba(0,0,0,0.2);
+}
+.all-products .product{
+    width: 14%;
+    height: 100%;
+    background-color: #fff;
+    padding: 2rem 1rem;
+    transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+.all-products .product img{
+    width: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.all-products .product h3{
+    font-size: 1.2rem;
+    color: #666666;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+.all-products .product p{
+    color: #363636 !important;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    
+}
+/* ============================
+    product Part ends
+===========================*/
+/* ==============================
+    Watch Products styling
+================================*/
+#watch-products{
+    background-color: #F6F7F9;
+}
+#watch-products .all-products .product{
+    height: 100%;
+}
+#watch-products .all-products .product img{
+    width: 100%;
+    max-width: 100%;
+    height: 18rem;
+    object-fit: contain;
+}
+/* ==============================
+    Watch Products ends
+================================*/
+/* ============================
+    footer Part Starts
+===========================*/
+footer{
+    padding: 7rem 0rem 3rem;
+    background-color: #2C2C2C;
+    margin-top: 2rem;
+}
+.footer-col{
+    width: 22%;
+}
+.col-head h3{
+    font-size: 2rem;
+    color: #ea6721;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.col-text{
+    margin-top: 1rem;
+}
+.col-text p{
+    font-size: 1.4rem;
+    color: #e2e2e2;
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 2.4rem;
+}
+.col-text .support-btn{
+    margin-top: 3rem;
+
+    
+}
+.col-text .support-btn a{
+    font-size: 1.5rem;
+    color: #ea6721;
+    margin-top: 1rem;
+    position: relative;
+    padding-left: 3rem;
+}
+.col-text .support-btn a i{
+    position: absolute;
+    left: 0px;
+    font-size: 2rem;
+}
+.col-text ul li a{
+    font-size: 1.5rem;
+    color: #e2e2e2;
+    margin-top: 1rem;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.col-text ul li a:hover{
+    color: #ea6721;
+}
+.col-text input{
+    outline: 0;
+    border: none;
+    background-color: #fff;
+    padding: 0.5rem;
+    width: 100%;
+}
+.col-text #sub-btn{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    background-color: #ea6721;
+}
+.col-head-2{
+    margin-top: 3rem;
+}
+.col-head-2 .social-links{
+    display: flex;
+    margin-top: 2rem;
+}
+.col-head-2 .social-links a:first-child{
+    margin-left: 0rem;
+}
+.col-head-2 .social-links a{
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 1rem;
+    border: 0.1rem solid #e2e2e2;
+    margin-left: 1rem;
+}
+.footer-img{
+    width: 100%;
+    margin-top: 2rem;
+}
+.footer-img img{
+    width: 100%;
+    max-width: 100%;
+}
+.copyright{
+    text-align: center;
+    font-size: 1.3rem;
+    color: #e2e2e2;
+    
+}
+/* ============================
+    footer Part ends
+===========================*/
+/* ============================
+    product page Part Starts
+===========================*/
+#shoepage{
+    padding: 5rem 0rem;
+    background-color: #F6F7F9;
+}
+.page-header{
+    position: relative;
+}
+.page-header:after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 0.2rem;
+    background-color: #e2e2e2;
+    bottom: -2rem;
+    left: 0px;
+}
+.page-header h3{
+    font-size: 1.7rem;
+    color: #ea6721;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+
+}
+.page-header .src-btn {
+    background-color: #fff;
+    width: 50rem;
+    border: 0.1rem solid #666666;
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+}
+.page-header .src-btn a{
+    font-size: 2.5rem;
+    color: #ea6721;
+    padding-right: 1rem;
+}
+.page-header .src-btn input{
+    outline: 0;
+    background-color: transparent;
+    padding: 2rem;
+    border-radius: 0.4rem;
+    width: 100%;
+    font-weight: 700;
+    border:none;
+    font-family: 'Josefin Sans', sans-serif;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+}
+.all-shoes{
+    margin-top: 5rem;
+    
+}
+.all-shoes .shoe{
+    width: 14.5%;
+    background-color: #fff;
+    margin-top: 3rem 
+    
+}
+.all-shoes .shoe .shoe-img{
+    width: 100%;
+}
+.all-shoes .shoe .shoe-img img{
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+.all-shoes .shoe .shoe-text{
+    padding: 1rem;
+}
+.all-shoes .shoe .shoe-text h4{
+    font-size: 1.4rem;
+    color: #666666;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    margin-top: 1rem;
+    padding-right: 3rem;
+}
+.all-shoes .shoe .shoe-text p{
+    font-size: 1.4rem;
+    color: #000000;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    padding-top: 1rem;
+}
+.all-shoes .shoe .shoe-text a{
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    padding: 1rem;
+    background-color: #00e0d0;
+    border-radius: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    display: inline-block;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+/* ============================
+    product page Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
